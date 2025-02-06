@@ -397,12 +397,13 @@
             <br>
 
             <div>
-                <label for = "firstname">First Name</label><br>
+                <label for = "first-name">First Name</label><br>
                 <input
                     type = "text"
-                    if = "first-name"
+                    id = "first-name"
                     placeholder="first name"
                 >
+                <br>
             </div>
         </section>
     </main>
