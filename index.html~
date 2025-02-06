@@ -475,14 +475,17 @@
                     <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "40">
                 </button>
             </div>
-            <h4>Navigation</h4>
-            <a href = "#" class = "nav_item">Home</a>
-            <a href = "#" class = "nav_item">About</a>
-            <a href = "#" class = "nav_item">Skills</a>
-            <a href = "#" class = "nav_item">Projects</a>
-            <a href = "#" class = "nav_item">Gallery</a>
-            <a href = "#" class = "nav_item">Achievements</a>
-            <a href = "#" class = "nav_item">Contact Me</a>
+            <div>
+                <h4>Navigation</h4>
+                <a href = "#" class = "nav_item">Home</a>
+                <a href = "#" class = "nav_item">About</a>
+                <a href = "#" class = "nav_item">Skills</a>
+                <a href = "#" class = "nav_item">Projects</a>
+                <a href = "#" class = "nav_item">Gallery</a>
+                <a href = "#" class = "nav_item">Achievements</a>
+                <a href = "#" class = "nav_item">Contact Me</a>
+            </div>
+
         </footer>
     </main>
 </body>
