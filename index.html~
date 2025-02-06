@@ -320,11 +320,11 @@
         <h3><b>Gallery</b></h3>
         <section>
             <div>
-                <img src = "assets/car.jpg" title = "car" alt = "car" width = "150">
-                <img src = "assets/havelock.jpg" title = "havelock" alt = "havelock" width = "150">
-                <img src = "assets/sss.jpg" title = "sss" alt = "sss" width = "150">
-                <img src = "assets/presentation2.jpg" title = "presentation2" alt = "presentation2" width = "150">
-                <img src = "assets/cafe.jpg" title = "cafe" alt = "cafe" width = "150">
+                <img src = "assets/car.jpg" title = "car" alt = "car" width = "120">
+                <img src = "assets/havelock.jpg" title = "havelock" alt = "havelock" width = "120">
+                <img src = "assets/sss.jpg" title = "sss" alt = "sss" width = "120">
+                <img src = "assets/presentation2.jpg" title = "presentation2" alt = "presentation2" width = "120">
+                <img src = "assets/cafe.jpg" title = "cafe" alt = "cafe" width = "120">
             </div>
         </section>
     </main>
