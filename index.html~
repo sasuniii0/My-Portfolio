@@ -295,7 +295,7 @@
                 </ul>
                 <div>
                     <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
+                        <img src="assets/git.png" alt="Git Icon" width = "20" >
                     </button>
                 </div>
             </div>
