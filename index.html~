@@ -52,9 +52,35 @@
             </button>
             <br><br>
         </div>
+
         <div>
             <div>
-                <button style = background:deepskyblue>
+                <button>
+                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
+                </button>
+            </div>
+            <div>
+                <button>
                     <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
                 </button>
             </div>
