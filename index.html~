@@ -347,8 +347,12 @@
         <h3><b>Achievements</b></h3>
         <section>
             <div>
-                <img src = "assets/mehackathon.jpg" title = "previous" alt = "previous" width = "20">
+                <img src = "assets/mehackathon.jpg" title = "previous" alt = "previous" width = "150">
                 <p>A proud moment capturing the essence of my journey in tech and innovation.</p>
+            </div>
+            <div>
+                <img src = "assets/hackathon.jpg" title = "previous" alt = "previous" width = "150">
+                <p></p>
             </div>
         </section>
     </main>
