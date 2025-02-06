@@ -333,7 +333,7 @@
             <p>Discover more of my world through photos and stories on Instagram and Facebook!</p>
             <div>
                 <button>
-                    <img src="assets/insagram.png" alt="instagram Icon" width = "40" >
+                    <img src="assets/instagram.png" alt="instagram Icon" width = "40" >
                 </button>
                 <button>
                     <img src="assets/linkedin.png" alt="linkedin Icon" width = "40" >
