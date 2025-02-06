@@ -47,7 +47,7 @@
             <img src = "assets/image.png" title = "Sasuni" alt = "my pic 1" width = "500">
         </div>
         <div>
-            <button style = background:deepskyblue>
+            <button>
                 <img src="assets/download.png" alt="Git Icon" width = "20" > CV
             </button>
             <br><br>
