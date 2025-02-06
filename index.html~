@@ -153,10 +153,16 @@
         <h3><b>Projects</b></h3>
         <section>
             <div>
-                <img src = "assets/mvc.png" title = "mvc" alt = "mvc" width = "150"><br>
-                <button style = background:deepskyblue>
-                    <img src="assets/git.png" alt="Git Icon" width = "40">
-                </button>
+                <div>
+                    <img src = "assets/mvc.png" title = "mvc" alt = "mvc" width = "150"><br>
+                    <button style = background:deepskyblue>
+                        <img src="assets/git.png" alt="Git Icon" width = "40" >
+                    </button>
+                </div>
+                <div>
+                    <h5>MVC ArchitecturemStand-alone pet care management system</h5>
+                    <p></p>
+                </div>
             </div>
         </section>
     </main>
