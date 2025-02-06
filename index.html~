@@ -150,9 +150,11 @@
 
 <!-----------------------------Projects---------------------------------------------->
     <main id = "projects">
-        <h3><b>Skills & Technologies</b></h3>
+        <h3><b>Projects</b></h3>
         <section>
-
+            <div>
+                
+            </div>
         </section>
     </main>
 
