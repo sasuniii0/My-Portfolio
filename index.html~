@@ -121,7 +121,6 @@
     <main id = "skills">
         <h3><b>Skills</b></h3>
         <section>
-            <p>Skills & Technologies</p>
             <div>
                 <img src = "assets/java.png" title = "java" alt = "java" width = "20">
                 <img src = "assets/html.png" title = "html" alt = "html" width = "20">
