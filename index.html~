@@ -137,7 +137,7 @@
                 <img src = "assets/c.png" title = "c" alt = "c" width = "20">
                 <img src = "assets/canva.png" title = "canva" alt = "canva" width = "20">
                 <img src = "assets/git.png" title = "git" alt = "git" width = "20">
-                <img src = "assets/vscode.png" title = "vs" alt = "vs" width = "20";
+                <img src = "assets/vscode.png" title = "vs" alt = "vs" width = "20">
                 <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "20">
                 <img src = "assets/medium.png" title = "medium" alt = "medium" width = "20">
                 <img src = "assets/angular.png" title = "angular" alt = "angular" width = "20">
@@ -153,7 +153,10 @@
         <h3><b>Projects</b></h3>
         <section>
             <div>
-                
+                <img src = "assets/mvc.png" title = "mvc" alt = "mvc" width = "150"><br>
+                <button style = background:deepskyblue>
+                    <img src="assets/git.png" alt="Git Icon" width = "40">
+                </button>
             </div>
         </section>
     </main>
