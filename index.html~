@@ -229,8 +229,16 @@
 
 <!-----------------------------Assignments---------------------------------------------->
     <main id ="assignments">
+        <h3><b>Assignments</b></h3>
         <section>
-
+            <div>
+                <h6>Assignment 1</h6>
+                <ul>
+                    <li>Document 1</li>
+                    <li>Document 2</li>
+                    <li>Document 3</li>
+                </ul>
+            </div>
         </section>
     </main>
 
