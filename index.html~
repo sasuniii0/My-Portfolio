@@ -161,6 +161,18 @@
                 </div>
                 <div>
                     <h5>MVC ArchitecturemStand-alone pet care management system</h5>
+                    <p>The Paws and Claws Care Project is a stand-alone pet care management system that centralizes service bookings, inventory control, and customer management. Using the MVC (Model-View-Controller) architecture, it separates data handling, user interface, and user input processing to improve maintainability. The system aims to enhance operational efficiency and provide a seamless experience for pet owners and staff.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src = "assets/tictactoe.png" title = "tictactoe" alt = "tictactoe" width = "150"><br>
+                    <button style = background:deepskyblue>
+                        <img src="assets/git.png" alt="Git Icon" width = "40" >
+                    </button>
+                </div>
+                <div>
+                    <h5>AI-Powered Tic-Tac-Toe: Championship Edition</h5>
                     <p></p>
                 </div>
             </div>
