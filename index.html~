@@ -239,7 +239,6 @@
                     <li>Document 3</li>
                 </ul>
                 <div>
-                    <img src = "assets/portfolio.png" title = "portfolio" alt = "portfolio" width = "150"><br>
                     <button>
                         <img src="assets/git.png" alt="Git Icon" width = "40" >
                     </button>
