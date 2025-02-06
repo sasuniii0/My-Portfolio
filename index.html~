@@ -47,8 +47,12 @@
             <img src = "assets/image.png" title = "Sasuni" alt = "my pic 1" width = "500">
         </div>
         <div>
-            <button>CV</button>
-            <img src = "assets/download.png" title = "download" alt = "download" width = "15">
+<!--
+            <img src = "assets/download.png" title = "download" alt = "download" width = "20"><br>
+-->
+            <button style = background:deepskyblue>
+                <img src="assets/download.png" alt="Git Icon" width = "40" >CV
+            </button>
         </div>
         <div>
             <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
@@ -189,7 +193,15 @@
                 </div>
             </div>
             <div>
-                <p></p>
+                <p>Explore more of my projects and creations! Visit my LinkedIn or GitHub for details.</p>
+                <div>
+                    <button style = background:deepskyblue>
+                        <img src="assets/git.png" alt="Git Icon" width = "40" >
+                    </button>
+                    <button style = background:deepskyblue>
+                        <img src="assets/linkedin.png" alt="linkedin Icon" width = "40" >
+                    </button>
+                </div>
             </div>
         </section>
     </main>
