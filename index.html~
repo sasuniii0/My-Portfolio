@@ -319,7 +319,13 @@
     <main id = "gallery">
         <h3><b>Gallery</b></h3>
         <section>
-
+            <div>
+                <img src = "assets/car.jpg" title = "car" alt = "car" width = "150">
+                <img src = "assets/havelock.jpg" title = "havelock" alt = "havelock" width = "150">
+                <img src = "assets/sss.jpg" title = "sss" alt = "sss" width = "150">
+                <img src = "assets/presentation2.jpg" title = "presentation2" alt = "presentation2" width = "150">
+                <img src = "assets/tictactoe.png" title = "tictactoe" alt = "tictactoe" width = "150">
+            </div>
         </section>
     </main>
 
