@@ -356,7 +356,7 @@
             </div>
             <div>
                 <img src = "assets/tictactoeorg.png" title = "previous" alt = "previous" width = "150">
-                <p></p>
+                <p>"AI Tic-Tac-Toe: Strategy, challenge, and smart gameplay."</p>
             </div>
         </section>
     </main>
