@@ -324,8 +324,8 @@
                 <div>
                     <img src = "assets/car.jpg" title = "car" alt = "car" width = "120">
                     <img src = "assets/havelock.jpg" title = "havelock" alt = "havelock" width = "120">
-                    <img src = "assets/sss.jpg" title = "sss" alt = "sss" width = "120">
-                    <img src = "assets/wijaya.jpg" title = "presentation2" alt = "presentation2" width = "120">
+                    <img src = "assets/christmas.jpg" title = "christmas" alt = "christmas" width = "120">
+                    <img src = "assets/wijaya.jpg" title = "wijaya" alt = "wijaya" width = "120">
                     <img src = "assets/cafe.jpg" title = "cafe" alt = "cafe" width = "120">
                 </div>
                 <img src = "assets/next.png" title = "next" alt = "next" width = "20">
@@ -346,7 +346,10 @@
     <main id = "achievements">
         <h3><b>Achievements</b></h3>
         <section>
-
+            <div>
+                <img src = "assets/mehackathon.jpg" title = "previous" alt = "previous" width = "20">
+                <p>A proud moment capturing the essence of my journey in tech and innovation.</p>
+            </div>
         </section>
     </main>
 
