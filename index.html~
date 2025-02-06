@@ -58,23 +58,15 @@
                 <button>
                     <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
                 </button>
-            </div>
-            <div>
                 <button>
                     <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "50">
                 </button>
-            </div>
-            <div>
                 <button>
                     <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
                 </button>
-            </div>
-            <div>
                 <button>
                     <img src = "assets/git.png" title = "git" alt = "git" width = "50">
                 </button>
-            </div>
-            <div>
                 <button>
                     <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
                 </button>
