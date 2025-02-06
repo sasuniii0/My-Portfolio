@@ -466,7 +466,7 @@
                     <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "40">
                 </button>
                 <button>
-                    <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
+                    <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "40">
                 </button>
                 <button>
                     <img src = "assets/git.png" title = "git" alt = "git" width = "50">
