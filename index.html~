@@ -180,7 +180,7 @@
             <div>
                 <div>
                     <img src = "assets/mvc.png" title = "mvc" alt = "mvc" width = "150"><br>
-                    <button style = background:deepskyblue>
+                    <button>
                         <img src="assets/git.png" alt="Git Icon" width = "40" >
                     </button>
                 </div>
