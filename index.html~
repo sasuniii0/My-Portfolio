@@ -76,10 +76,9 @@
             </div>
             <div>
                 <button>
-                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
+                    <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
                 </button>
             </div>
-            <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
         </div>
     </section>
 </main>
