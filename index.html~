@@ -445,8 +445,13 @@
 
 <!-----------------------------footer---------------------------------------------->
     <main id = "footerPg">
+        <h3><b>Get In Touch</b></h3>
         <section>
-
+            <div>
+                <iframe>
+                    
+                </iframe>
+            </div>
         </section>
     </main>
 </body>
