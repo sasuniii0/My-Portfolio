@@ -385,7 +385,7 @@
         <h3><b>Contact Me</b></h3>
         <section>
             <div>
-
+                <img src = "assets/location.png" title = "location" alt = "location" width ="40">
             </div>
         </section>
     </main>
