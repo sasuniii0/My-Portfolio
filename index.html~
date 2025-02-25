@@ -12,7 +12,7 @@
 
     <!-----------------------------------------------google fonts-------------------------------------------------->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap');
     </style>
 
     <!-----------------------------Meta data---------------------------------------->
@@ -30,8 +30,8 @@
 <main id = "fullPg">
 <header>
     <!-- icon -->
-    <div>
-    <img src = "assets/icon.png" title = "Sasuni" alt = "my pic 1" width = "50"> portfolio
+    <div class = "box">
+    <img src = "assets/icon.png" title = "Sasuni" alt = "my pic 1" width = "100">
     </div>
 
     <!-- navigation -->
@@ -48,14 +48,14 @@
 
 <!--------------------------Home------------------------------------->
 <main id = "homeMain">
-    <section>
+    <section id="section-home">
         <div><h3>Hey! I'm <b>Sasuni Wijerathne</b> </h3></div>
         <p>Full Stack Developer | UI UX Designer | Content Creator | Web Creator</p>
         <button>On a Personal note</button>
     </section>
-    <section>
-        <div>
-            <img src = "assets/image.png" title = "Sasuni" alt = "my pic 1" width = "500">
+    <section >
+        <div id="section-home-photo">
+            <img src = "assets/image.png" title = "Sasuni" alt = "my pic 1" width = "700">
         </div>
         <div>
             <button>
