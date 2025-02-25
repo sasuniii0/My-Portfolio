@@ -17,10 +17,25 @@ header{
     align-items: center;
     padding: 5px;
     background: black;
-    position: fixed;
+    font-size: 20px;
+    position: sticky;
     z-index: 1000;
     top: 0;
 }
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the default text color of the parent element */
+    margin: 0 15px;
+}
+
+nav a:visited {
+    color: inherit; /* Ensures visited links don't change color */
+}
+
+nav a:hover {
+    color: #00fbff; /* Optional: Change color on hover */
+}
+
 #section-home{
     top: 0;
     bottom: 0;
@@ -63,13 +78,5 @@ h3{
     opacity: 0.5;
     padding-top: 20px;
 }
-div > div {
-    display: flex;
-    gap: 10px; /* Adds space between buttons */
-}
-.social {
-    border: none; /* Optional: Removes button border */
-    background: none; /* Optional: Removes button background */
-    cursor: pointer; /* Changes cursor to pointer */
-}
+
 
