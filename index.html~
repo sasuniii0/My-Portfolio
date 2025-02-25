@@ -60,7 +60,7 @@
         </div>
         <div>
             <button>
-                <img src="assets/download.png" alt="Git Icon" width = "20" > CV
+                <img src="assets/download.png" alt="download" width = "20" > CV
             </button>
             <br><br>
         </div>

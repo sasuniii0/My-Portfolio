@@ -17,7 +17,7 @@ header{
     align-items: center;
     padding: 5px;
     background: black;
-    position: sticky;
+    position: fixed;
     z-index: 1000;
     top: 0;
 }
@@ -61,5 +61,15 @@ h3{
     background: #342a61;
     z-index: -1;
     opacity: 0.5;
-    padding-top: 20px;}
+    padding-top: 20px;
+}
+div > div {
+    display: flex;
+    gap: 10px; /* Adds space between buttons */
+}
+.social {
+    border: none; /* Optional: Removes button border */
+    background: none; /* Optional: Removes button background */
+    cursor: pointer; /* Changes cursor to pointer */
+}
 
