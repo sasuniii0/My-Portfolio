@@ -1,7 +1,10 @@
+
 body{
     background: #140E34;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     color: #F5F5F5;
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 16px;
 }
