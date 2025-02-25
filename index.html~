@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Sasuni Wijerathne</title>
 
-    <link rel="stylesheet" href="assets/styles.css">
+    <!-----------------------------------------------css stylesheet-------------------------------------------------->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-----------------------------------------------normalize-------------------------------------------------->
     <link rel="stylesheet" href="lib/normalize.css">
 
 <!-----------------------------Meta data---------------------------------------->
