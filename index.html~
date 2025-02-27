@@ -279,7 +279,8 @@
     </main>
 
 <!-----------------------------Gallery---------------------------------------------->
-    <main id = "gallery">
+    <div  id = "gallery"></div>
+    <main>
         <h3><b>Gallery</b></h3>
         <section>
             <div>
@@ -302,7 +303,8 @@
     </main>
 
 <!-----------------------------Achievements---------------------------------------------->
-    <main id = "achievements">
+    <div id = "achievements"></div>
+    <main>
         <h3><b>Achievements</b></h3>
         <section>
             <div>
@@ -340,7 +342,8 @@
     </main>
 
 <!-----------------------------Contact me---------------------------------------------->
-    <main id = "contact me">
+    <div id = "contact me"></div>
+    <main >
         <h3><b>Contact Me</b></h3>
         <section>
             <div>
