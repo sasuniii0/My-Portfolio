@@ -106,8 +106,8 @@
                 <p class="left"><strong>Email :</strong> sasuniwijerathne@gmail.com</p>
             </div>
             <div>
-                <p class="right"><strong>Age :</strong> 21</p>
-                <p class="right"><strong>From :</strong> Sri Lanka</p>
+                <span class="right"><strong>Age :</strong> 21</span>
+                <span class="right"><strong>From :</strong> Sri Lanka</span>
             </div>
         </div>
         <div>

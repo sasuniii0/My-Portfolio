@@ -191,12 +191,10 @@ main{
     width: 800px;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    gap: 20px;
 }
 
 #aboutMeBox p {
     display: flex;
-    justify-content: space-between;
     margin: 8px 0;
 }
 .right {
