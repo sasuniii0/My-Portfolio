@@ -67,21 +67,11 @@
 
         <div>
             <div class="social">
-                <button>
-                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "48">
-                </button>
-                <button>
-                    <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "48">
-                </button>
-                <button>
-                    <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "48">
-                </button>
-                <button>
-                    <img src = "assets/git.png" title = "git" alt = "git" width = "48">
-                </button>
-                <button>
-                    <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
-                </button>
+                <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "48">
+                <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "48">
+                <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "48">
+                <img src = "assets/git.png" title = "git" alt = "git" width = "48">
+                <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
             </div>
         </div>
     </section>
