@@ -31,7 +31,7 @@
 <header>
     <!-- icon -->
     <div class = "box">
-    <img src = "assets/icon.png" title = "Sasuni" alt = "my pic 1" width = "100">
+    <img src = "assets/icon.png" title = "Sasuni" alt = "my pic 1" width = "80">
     </div>
 
     <!-- navigation -->
@@ -66,22 +66,12 @@
         </div>
 
         <div>
-            <div>
-                <button class = "social">
-                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
-                </button>
-                <button>
-                    <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "50">
-                </button>
-                <button>
-                    <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
-                </button>
-                <button>
-                    <img src = "assets/git.png" title = "git" alt = "git" width = "50">
-                </button>
-                <button>
-                    <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
-                </button>
+            <div class="social">
+                <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "48">
+                <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "48">
+                <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "48">
+                <img src = "assets/git.png" title = "git" alt = "git" width = "48">
+                <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "48">
             </div>
         </div>
     </section>
