@@ -36,7 +36,8 @@
 </header>
 
 <!--------------------------Home------------------------------------->
-<main id = "homeMain">
+<div id="homeMain"></div>
+<main>
     <section>
         <div><h3>Hey! I'm <b>Sasuni Wijerathne</b> </h3></div>
         <p>Full Stack Developer | UI UX Designer | Content Creator | Web Creator</p>
@@ -55,8 +56,8 @@
 
         <div>
             <div>
-                <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "48">
-                <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "48">
+                <img src = "assets/fb.png" title = "facebook" alt = "facebook" width = "48">
+                <img src = "assets/insta.png" title = "instagram" alt = "instagram" width = "48">
                 <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "48">
                 <img src = "assets/git.png" title = "git" alt = "git" width = "48">
                 <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "48">
@@ -66,7 +67,8 @@
 </main>
 
 <!-----------------------------About me---------------------------------------------->
-<main id = "aboutMe">
+<div  id = "aboutMe"></div>
+    <main>
     <h3><b>About me</b></h3>
     <section>
         <div>
@@ -86,8 +88,8 @@
             <button>Fun Facts</button><br><br><br>
         </div>
         <div>
-            <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
-            <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "50">
+            <img src = "assets/fb.png" title = "facebook" alt = "facebook" width = "50">
+            <img src = "assets/insta.png" title = "instagram" alt = "instagram" width = "50">
             <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
             <img src = "assets/git.png" title = "git" alt = "git" width = "50">
             <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
@@ -96,7 +98,8 @@
 </main>
 
 <!-----------------------------Education---------------------------------------------->
-    <main id = "education">
+    <div  id = "education"></div>
+    <main>
         <h3><b>Education</b></h3>
         <section>
             <div>
@@ -123,7 +126,8 @@
     </main>
 
 <!-----------------------------Skills---------------------------------------------->
-    <main id = "skills">
+    <div id = "skills"></div>
+    <main>
         <h3><b>Skills</b></h3>
         <section>
             <p>Skills & Technologies</p>
@@ -154,7 +158,8 @@
     </main>
 
 <!-----------------------------Projects---------------------------------------------->
-    <main id = "projects">
+    <div  id = "projects"></div>
+    <main>
         <h3><b>Projects</b></h3>
         <section>
             <div>
@@ -209,9 +214,7 @@
                     <li>Document 3</li>
                 </ul>
                 <div>
-                    <button>
                         <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
                 </div>
             </div>
             <br>
@@ -223,9 +226,7 @@
                     <li>Document 3</li>
                 </ul>
                 <div>
-                    <button>
                         <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
                 </div>
             </div>
             <br>
@@ -237,9 +238,7 @@
                     <li>Document 3</li>
                 </ul>
                 <div>
-                    <button>
                         <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
                 </div>
             </div>
             <br>
@@ -251,9 +250,7 @@
                     <li>Document 3</li>
                 </ul>
                 <div>
-                    <button>
                         <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
                 </div>
             </div>
             <br>
@@ -264,9 +261,7 @@
                     <li>Document 2</li>
                 </ul>
                 <div>
-                    <button>
                         <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
                 </div>
             </div>
             <br>
@@ -277,9 +272,7 @@
                     <li>Document 2</li>
                 </ul>
                 <div>
-                    <button>
                         <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
                 </div>
             </div>
         </section>
@@ -302,8 +295,8 @@
             </div>
             <p>Discover more of my world through photos and stories on Instagram and Facebook!</p>
             <div>
-                    <img src="assets/instagram.png" alt="instagram Icon" width = "40" >
-                    <img src="assets/facebook.png" alt="facebook Icon" width = "40" >
+                    <img src="assets/insta.png" alt="instagram Icon" width = "40" >
+                    <img src="assets/fb.png" alt="facebook Icon" width = "40" >
             </div>
         </section>
     </main>
@@ -425,8 +418,8 @@
             </div>
             <div>
                 <h2>Follow Me</h2>
-                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "40">
-                    <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "40">
+                    <img src = "assets/fb.png" title = "facebook" alt = "facebook" width = "40">
+                    <img src = "assets/insta.png" title = "instagram" alt = "instagram" width = "40">
                     <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "40">
                     <img src = "assets/git.png" title = "git" alt = "git" width = "40">
                     <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "40">
