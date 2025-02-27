@@ -81,7 +81,7 @@
 <!-----------------------------About me---------------------------------------------->
     <div id="aboutMe" class="sec"></div>
     <main >
-    <h3><b>About me</b></h3><div></div>
+    <h3><b>About me</b></h3>
     <section>
         <div>
             <img src = "assets/aboutmeImg.png" title = "aboutMeSasuni" alt = "aboutMeImg" width = "500">
@@ -112,7 +112,7 @@
 <!-----------------------------Education---------------------------------------------->
     <div id = "education" class="sec"></div>
     <main >
-        <h3><b>Education</b></h3><div></div>
+        <h3><b>Education</b></h3>
         <section>
             <div>
                 <img src = "assets/gothami.png" title = "gothami" alt = "GBV" width ="200">
@@ -140,7 +140,7 @@
 <!-----------------------------Skills---------------------------------------------->
     <div id = "skills" class="sec"></div>
     <main >
-        <h3><b>Skills</b></h3><div></div>
+        <h3><b>Skills</b></h3>
         <section>
             <p>Skills & Technologies</p>
             <div>
@@ -172,7 +172,7 @@
 <!-----------------------------Projects---------------------------------------------->
     <div id = "projects" class="sec"></div>
     <main >
-        <h3><b>Projects</b></h3><div></div>
+        <h3><b>Projects</b></h3>
         <section>
             <div>
                 <div>
@@ -217,7 +217,7 @@
 <!-----------------------------Assignments---------------------------------------------->
     <div id ="assignments"></div>
     <main >
-        <h3><b>Assignments</b></h3><div></div>
+        <h3><b>Assignments</b></h3>
         <section>
             <div>
                 <h5>Assignment 1</h5>
@@ -294,7 +294,7 @@
 <!-----------------------------Gallery---------------------------------------------->
     <div id="gallery" class="sec"></div>
     <main >
-        <h3><b>Gallery</b></h3><div></div>
+        <h3><b>Gallery</b></h3>
         <section>
             <div>
                 <img src = "assets/previous.png" title = "previous" alt = "previous" width = "20">
@@ -318,7 +318,7 @@
 <!-----------------------------Achievements---------------------------------------------->
     <div id = "achievements" class="sec"></div>
     <main >
-        <h3><b>Achievements</b></h3><div></div>
+        <h3><b>Achievements</b></h3>
         <section>
             <div>
                 <img src = "assets/mehackathon.jpg" title = "previous" alt = "previous" width = "150">
@@ -333,7 +333,7 @@
                 <p>"AI Tic-Tac-Toe: Strategy, challenge, and smart gameplay."</p>
             </div>
         </section>
-        <h3><b>Certificates</b></h3><div></div>
+        <h3><b>Certificates</b></h3>
             <section>
                 <div>
                     <img src = "assets/awardCe.jpg" title = "awardCe" alt = "awardCe" width = "150">
@@ -357,7 +357,7 @@
 <!-----------------------------Contact me---------------------------------------------->
     <div id = "contact me" class="sec"></div>
     <main >
-        <h3><b>Contact Me</b></h3><div></div>
+        <h3><b>Contact Me</b></h3>
         <section>
             <div>
                 <img src = "assets/location.png" title = "location" alt = "location" width ="40">
@@ -420,7 +420,7 @@
 
 <!-----------------------------footer---------------------------------------------->
     <main id = "footerPg">
-        <h3><b>Get In Touch</b></h3><div></div>
+        <h3><b>Get In Touch</b></h3>
         <footer>
             <div>
                 <iframe>
