@@ -78,7 +78,7 @@ h3{
     opacity: 0.5;
     padding-top: 20px;
 }
-button{
-    background: #00fbff;
+img{
+    color-interpolation: linearRGB;
 }
 

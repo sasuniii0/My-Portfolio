@@ -98,21 +98,11 @@
             <button>Fun Facts</button><br><br><br>
         </div>
         <div>
-            <button>
                 <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
-            </button>
-            <button>
                 <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "50">
-            </button>
-            <button>
                 <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
-            </button>
-            <button>
                 <img src = "assets/git.png" title = "git" alt = "git" width = "50">
-            </button>
-            <button>
                 <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
-            </button>
         </div>
     </section>
 </main>
@@ -182,9 +172,7 @@
             <div>
                 <div>
                     <img src = "assets/mvc.png" title = "mvc" alt = "mvc" width = "150"><br>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
                 </div>
                 <div>
                     <h5>MVC ArchitecturemStand-alone pet care management system</h5>
@@ -194,9 +182,7 @@
             <div>
                 <div>
                     <img src = "assets/tictactoe.png" title = "tictactoe" alt = "tictactoe" width = "150"><br>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
                 </div>
                 <div>
                     <h5>AI-Powered Tic-Tac-Toe: Championship Edition</h5>
@@ -206,9 +192,7 @@
             <div>
                 <div>
                     <img src = "assets/portfolio.png" title = "portfolio" alt = "portfolio" width = "150"><br>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
                 </div>
                 <div>
                     <h5>My Digital Showcase</h5>
@@ -218,12 +202,8 @@
             <div>
                 <p>Explore more of my projects and creations! Visit my LinkedIn or GitHub for details.</p>
                 <div>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
-                    <button>
-                        <img src="assets/linkedin.png" alt="linkedin Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
+                    <img src="assets/linkedin.png" alt="linkedin Icon" width = "40" >
                 </div>
             </div>
         </section>
@@ -241,9 +221,7 @@
                     <li>Document 3</li>
                 </ul>
                 <div>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
                 </div>
             </div>
             <br>
@@ -255,9 +233,7 @@
                     <li>Document 3</li>
                 </ul>
                 <div>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
                 </div>
             </div>
             <br>
@@ -269,9 +245,7 @@
                     <li>Document 3</li>
                 </ul>
                 <div>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
                 </div>
             </div>
             <br>
@@ -283,9 +257,7 @@
                     <li>Document 3</li>
                 </ul>
                 <div>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
                 </div>
             </div>
             <br>
@@ -296,9 +268,7 @@
                     <li>Document 2</li>
                 </ul>
                 <div>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
                 </div>
             </div>
             <br>
@@ -309,9 +279,7 @@
                     <li>Document 2</li>
                 </ul>
                 <div>
-                    <button>
-                        <img src="assets/git.png" alt="Git Icon" width = "40" >
-                    </button>
+                    <img src="assets/git.png" alt="Git Icon" width = "40" >
                 </div>
             </div>
         </section>
@@ -334,12 +302,8 @@
             </div>
             <p>Discover more of my world through photos and stories on Instagram and Facebook!</p>
             <div>
-                <button>
-                    <img src="assets/instagram.png" alt="instagram Icon" width = "40" >
-                </button>
-                <button>
-                    <img src="assets/facebook.png" alt="facebook Icon" width = "40" >
-                </button>
+                <img src="assets/instagram.png" alt="instagram Icon" width = "40" >
+                <img src="assets/facebook.png" alt="facebook Icon" width = "40" >
             </div>
         </section>
     </main>
@@ -461,21 +425,11 @@
             </div>
             <div>
                 <h2>Follow Me</h2>
-                <button>
                     <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "40">
-                </button>
-                <button>
                     <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "40">
-                </button>
-                <button>
                     <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "40">
-                </button>
-                <button>
                     <img src = "assets/git.png" title = "git" alt = "git" width = "40">
-                </button>
-                <button>
                     <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "40">
-                </button>
             </div>
             <img src = "assets/image%20(10).png" title = "footerImage" alt = "sasuni" width = "200">
             <div>
