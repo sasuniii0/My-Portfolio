@@ -354,6 +354,10 @@
                 </div><br>
                 <button type = "submit">Submit</button>
             </form>
+            <div>
+                <p>Back to top</p>
+                <img src="assets/top.png" alt="top" width="50">
+            </div>
         </section>
     </main>
 </main>
@@ -362,7 +366,20 @@
     <main id = "footerPg">
         <footer>
             <div>
-
+                <nav class = "navigation">
+                    <div>
+                        <a href = "#" class = "nav_item">Home</a><br>
+                        <a href = "#" class = "nav_item">About</a><br>
+                        <a href = "#" class = "nav_item">Skills</a><br>
+                        <a href = "#" class = "nav_item">Projects</a><br>
+                    </div>
+                    <div>
+                        <a href = "#" class = "nav_item">Gallery</a><br>
+                        <a href = "#" class = "nav_item">Achievements</a><br>
+                        <a href = "#" class = "nav_item">Contact Me</a><br>
+                    </div>
+                    
+                </nav>
             </div>
         </footer>
     </main>
