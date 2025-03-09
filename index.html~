@@ -79,6 +79,7 @@
     <h3><b>About me</b></h3>
         <div></div>
     <section>
+
         <!--left-->
         <img src="assets/aboutmeImg.png" alt="aboutMe" width="300">
         <div></div>
@@ -114,22 +115,31 @@
         <h3><b>Education</b></h3>
         <div></div>
         <section>
+
+            <!--Gothami-->
             <div>
                 <img src="assets/gothami.png" alt="gothami" width="100">
                 <p>Successfully completed my O/Ls at Gothami Balika Vidyalaya with 8 A's and 1 B!</p>
             </div>
+
+            <!--st.pauls-->
             <div>
                 <img src="assets/st.pauls.png" alt="st.pauls" width="100">
                 <p>Completed my A/Ls in the Maths and IT stream at St. Paul’s Girls’ School, Milagiriya!</p>
             </div>
+            <!--British council-->
             <div>
                 <img src="assets/britishCouncil.jpg" alt="britishCouncil" width="100">
                 <p>Successfully completed the English MyClass program at the British Council!</p>
             </div>
+
+            <!--IBMS-->
             <div>
                 <img src="assets/imbs.png" alt="imbs" width="100">
                 <p>Completed my Diploma in Information Technology at IMBS Green Campus!</p>
             </div>
+
+            <!--IJSE-->
             <div>
                 <img src="assets/ijse.png" alt="ijse" width="100">
                 <p>  Currently pursuing the Higher National Diploma in Software Engineering (GDSE) at IJSE!</p>
