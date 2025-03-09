@@ -185,17 +185,22 @@
         <h3><b>Projects</b></h3><div></div>
         <section>
             <div>
+
                 <!--paws and claws care-->
                 <div>
                     <img src="assets/git%20(2).png" alt="git" >
                     <img src="assets/project.png" alt="project">
                     <p>MVC Architecture Stand-alone pet care management system</p>
                 </div>
+
+                <!--tic-tac-toe-->
                 <div>
                     <img src="assets/git%20(2).png" alt="git" >
                     <img src="assets/tictactoe.png" alt="tictactoe">
                     <p>AI-Powered Tic-Tac-Toe Championship Edition</p>
                 </div>
+
+                <!--portfolio-->
                 <div>
                     <img src="assets/git%20(2).png" alt="git" >
                     <img src="assets/portfolio.png" alt="portfolio">
