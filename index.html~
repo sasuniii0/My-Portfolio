@@ -378,7 +378,24 @@
                         <a href = "#" class = "nav_item">Achievements</a><br>
                         <a href = "#" class = "nav_item">Contact Me</a><br>
                     </div>
-                    
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit">🔍</button>
+                    </div>
+                    <div>
+                        <p>About me</p>
+                        <p>Lorem ipsum 4dolor sit amet, consectetur adipisicing elit. A dolores fugit incidunt velit vitae. Esse impedit iusto mollitia possimus tempora? Dicta eaque earum odio quam veritatis. Est laudantium officia perferendis?</p>
+                    </div>
+                    <div>
+                        <img src="assets/git%20(2).png" alt="git" >
+                        <img src="assets/medium%20(2).png" alt="medium">
+                        <img src="assets/instagram.png" alt="instagram">
+                        <img src="assets/fb.png" alt="fb">
+                        <img src="assets/linkedin%20(2).png" alt="linkedin">
+                    </div>
+                    <div>
+                        <p>© [2025] All rights reserved | Crafted with care by Sasuni | Powered by innovation</p>
+                    </div>
                 </nav>
             </div>
         </footer>
