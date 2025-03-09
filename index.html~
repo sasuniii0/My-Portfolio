@@ -351,7 +351,7 @@
                     <input type = "text"
                            id = "message"
                            placeholder=" Enter Message">
-                </div>
+                </div><br>
                 <button type = "submit">Submit</button>
             </form>
         </section>
