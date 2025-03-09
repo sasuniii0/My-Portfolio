@@ -275,7 +275,11 @@
                 <img src="assets/ogf.jpg" alt="ogf" width="300">
                 <img src="assets/ogf2.jpg" alt="ogf2" width="300">
             </div>
-            <p></p>
+            <p>Discover more of my world through photos and stories on Instagram and Facebook!</p>
+            <div>
+                <img src="assets/instagram.png" alt="instagram">
+                <img src="assets/fb.png" alt="fb">
+            </div>
         </section>
     </main>
 
@@ -284,7 +288,18 @@
     <main>
         <h3><b>Achievements</b></h3><div></div>
         <section>
-
+            <div>
+                <img src="assets/mehackathon.jpg" alt="mehackathon" width="300">
+                <p>A proud moment capturing the essence of my journey in tech and innovation.</p>
+            </div>
+            <div>
+                <img src="assets/hackathon.jpg" alt="hackathon" width="300">
+                <p>Team 'Codehub' celebrating our victory in the GENESYS24 Hackathon.</p>
+            </div>
+            <div>
+                <img src="assets/awardCe.jpg" alt="awardCe" width="300">
+                <p>Receiving the 'Best Student' award at IJSE for my dedication and commitment to learning.</p>
+            </div>
         </section>
     </main>
 
