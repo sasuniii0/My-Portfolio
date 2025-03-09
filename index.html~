@@ -8,7 +8,7 @@
 
     <link rel = "icon" type = "image/ico" href = "assets/icon.png">
 
-    <meta name="keywords" content="HTML, CSS, JavaScript, Java, C, C++, C#, Developer Portfolio, Sasuni Wijerathne">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Java, C, C++, C#, Python, React, Angular, Vue.js, Node.js, Frontend Developer, Backend Developer, Full-Stack Developer, Web Development, Software Engineer, UI/UX Design, Mobile App Development, Sasuni Wijerathne, Portfolio, Programmer, Software Developer, Cloud Computing, AI, Machine Learning, Cybersecurity, Open Source, Git, GitHub, Data Science, API Development, Database Management, SQL, NoSQL, AWS, DevOps, Freelancer, IT Professional">
     <meta name="description" content="Welcome to my portfolio! I'm Sasuni Wijerathne, a passionate developer from Sri Lanka specializing in modern web and software development.">
     <meta name="author" content="Sasuni Wijerathne">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 <header>
     <!-- icon -->
     <div>
-    <img src = "assets/icon.png" title = "Sasuni" alt = "my pic 1" width = "50"> portfolio
+        <h2>Sasuni</h2>
     </div>
 
     <!-- navigation -->
@@ -70,6 +70,7 @@
 <div  id = "aboutMe"></div>
     <main>
     <h3><b>About me</b></h3>
+        <div></div>
     <section>
         <div>
             <img src = "assets/aboutmeImg.png" title = "aboutMeSasuni" alt = "aboutMeImg" width = "500">
@@ -101,6 +102,7 @@
     <div  id = "education"></div>
     <main>
         <h3><b>Education</b></h3>
+        <div></div>
         <section>
             <div>
                 <img src = "assets/gothami.png" title = "gothami" alt = "GBV" width ="200">
@@ -129,6 +131,7 @@
     <div id = "skills"></div>
     <main>
         <h3><b>Skills</b></h3>
+        <div></div>
         <section>
             <p>Skills & Technologies</p>
             <div>
@@ -160,7 +163,7 @@
 <!-----------------------------Projects---------------------------------------------->
     <div  id = "projects"></div>
     <main>
-        <h3><b>Projects</b></h3>
+        <h3><b>Projects</b></h3><div></div>
         <section>
             <div>
                 <div>
@@ -204,7 +207,7 @@
 
 <!-----------------------------Assignments---------------------------------------------->
     <main id ="assignments">
-        <h3><b>Assignments</b></h3>
+        <h3><b>Assignments</b></h3><div></div>
         <section>
             <div>
                 <h5>Assignment 1</h5>
@@ -281,7 +284,7 @@
 <!-----------------------------Gallery---------------------------------------------->
     <div  id = "gallery"></div>
     <main>
-        <h3><b>Gallery</b></h3>
+        <h3><b>Gallery</b></h3><div></div>
         <section>
             <div>
                 <img src = "assets/previous.png" title = "previous" alt = "previous" width = "20">
@@ -305,7 +308,7 @@
 <!-----------------------------Achievements---------------------------------------------->
     <div id = "achievements"></div>
     <main>
-        <h3><b>Achievements</b></h3>
+        <h3><b>Achievements</b></h3><div></div>
         <section>
             <div>
                 <img src = "assets/mehackathon.jpg" title = "previous" alt = "previous" width = "150">
@@ -320,7 +323,7 @@
                 <p>"AI Tic-Tac-Toe: Strategy, challenge, and smart gameplay."</p>
             </div>
         </section>
-        <h3><b>Certificates</b></h3>
+        <h3><b>Certificates</b></h3><div></div>
             <section>
                 <div>
                     <img src = "assets/awardCe.jpg" title = "awardCe" alt = "awardCe" width = "150">
@@ -344,7 +347,7 @@
 <!-----------------------------Contact me---------------------------------------------->
     <div id = "contact me"></div>
     <main >
-        <h3><b>Contact Me</b></h3>
+        <h3><b>Contact Me</b></h3><div></div>
         <section>
             <div>
                 <img src = "assets/location.png" title = "location" alt = "location" width ="40">
@@ -407,7 +410,7 @@
 
 <!-----------------------------footer---------------------------------------------->
     <main id = "footerPg">
-        <h3><b>Get In Touch</b></h3>
+        <h3><b>Get In Touch</b></h3><div></div>
         <footer>
             <div>
                 <iframe>
