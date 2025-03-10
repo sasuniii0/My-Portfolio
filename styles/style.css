@@ -43,8 +43,9 @@ header{
     text-decoration: none;
     color: inherit;
 }
-.nav_item:hover{
-    color: #021023;
+
+.nav_item:hover {
+    color: #FFC107;
 }
 /* Home Main Section */
 #home {
@@ -89,10 +90,6 @@ header{
     cursor: pointer;
 }
 
-#icons img:hover {
-    transform: scale(1.2);
-}
-
 /* Middle Section (Image) */
 #middle {
     display: flex;
@@ -112,7 +109,6 @@ header{
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
-
 /* Right Section (Name) */
 #right {
     display: flex;
