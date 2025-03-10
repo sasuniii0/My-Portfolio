@@ -47,30 +47,25 @@ header{
     color: #021023;
 }
 /* Home Main Section */
-#homeMain {
+#home {
     display: flex;
     justify-content: space-between; /* Left, Center, Right */
     align-items: center;
-    min-height: 100vh; /* Full height of the screen */
-    width: 100%;
-    gap: 50px;
-    padding: 0 10%; /* Adds space on left and right */
+    min-height: 80vh; /* Full height of the screen */
+    padding: 10px 30px 30px 30px;
 }
-
 /* Left Section */
 #left {
-    margin-top:300px;
-    margin-left: 20px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
     width: 30%;
 }
 
 /* Line Separator */
 .line {
-    width: 40%;
+    width: 100%;
     height: 2px;
     background-color: white;
 }
@@ -101,17 +96,22 @@ header{
 }
 
 #middle img {
-    width: 250px;
+    width: 400px;
     border-radius: 50%;
     border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 /* Right Section (Name) */
 #right {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    width: 30%;
+    align-items: flex-end;
+    width: 50%;
+    gap: 10px;
 }
 
 #right h1 {
