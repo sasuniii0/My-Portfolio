@@ -134,3 +134,33 @@ header{
     height: 2px;
     background-color: white;
 }
+@media all and (max-width: 1000px) {
+    #home {
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    #left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #middle {
+        width: 100%;
+    }
+
+    #right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #right div:nth-child(1) {
+        font-size: 40px;
+    }
+    #nav{
+        display: none;
+    }
+}
