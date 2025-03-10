@@ -39,3 +39,10 @@ header{
     text-decoration: none;
     color: inherit;
 }
+#fullPg>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
