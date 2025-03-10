@@ -1,6 +1,7 @@
 body{
     background: black;
     color: white;
+    font-family: Poppins, sans-serif;
 }
 #fullPg{
     display: flex;
