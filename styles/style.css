@@ -228,6 +228,19 @@ h3{
 .resume-btn:active {
     transform: scale(0.95);
 }
+.main>div{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px 30px 30px;
+}
+.main>div>div{
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
 
 @media all and (max-width: 1000px) {
     #home {
