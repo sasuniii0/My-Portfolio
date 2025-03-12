@@ -5,6 +5,9 @@ body{
     transition: all 0.3s ease-in-out;
 
 }
+.div{
+    height: 100px;
+}
 #fullPg{
     display: flex;
     flex-direction: column;
@@ -328,22 +331,40 @@ h3{
 #educationPg>div>div{
     display: flex;
     align-items: center;
-    width: 80%;
-    height: 1px;
-    background: white;
 }
-.eduLine{
-    width: 80% !important;
-    background-color: white!important;
-    transition: background-color 0.3s ease!important;
-    align-items: end!important;
-}
+
 /* Text Styles */
 #educationPg p {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
 }
+#eduLine1{
+    width: 80%;
+    height: 2px;
+    background: white;
+}
+#eduLine2 {
+    width: 80%;
+    height: 2px;
+    background: white;
+}
+#eduLine3{
+     width: 80%;
+     height: 2px;
+     background: white;
+}
+#eduLine4{
+    width: 80%;
+    height: 2px;
+    background: white;
+}
+#eduLine5{
+    width: 80%;
+    height: 2px;
+    background: white;
+}
+
 .heading{
     font-size: 24px !important;
     font-weight: 700!important;
@@ -414,5 +435,10 @@ h3{
     #nav{
         display: none !important;
     }
+}
 
+@media all and (max-width: 300px) {
+    #educationPg{
+
+    }
 }
