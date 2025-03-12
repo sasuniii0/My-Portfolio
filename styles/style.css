@@ -291,15 +291,12 @@ h3{
 }
 #educationPg{
     display: flex;
-    justify-content: space-between; /* Left, Center, Right */
-    align-items: center;
+    align-items: flex-start;
     padding: 10px 30px 30px 30px;
-}
-#educationPg img{
-    display: flex;
-    gap: 10px;
     flex-direction: column;
-    width: 50%;
+}
+#educationPg >div{
+    background: darkblue;
 }
 @media all and (max-width: 1000px) {
     #home {
