@@ -117,9 +117,8 @@ nav a:hover {
 #middle img {
     width: 400px;
     border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
     cursor: pointer;
 
     /* Animation */
@@ -163,6 +162,71 @@ nav a:hover {
 #line2:hover {
     background-color: darkblue;
 
+}
+#aboutMe{
+    display: flex;
+    justify-content: space-between; /* Left, Center, Right */
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 0;
+}
+#aboutPg {
+    display: flex;
+    justify-content: space-between; /* Left, Center, Right */
+    align-items: center;
+    padding: 10px 30px 30px 30px;
+}
+#leftImg {
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+
+    /* Floating Animation with Rotation */
+    animation: floatRotate 4s ease-in-out infinite;
+}
+
+@keyframes floatRotate {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+#leftImg:hover {
+    animation: bounce 0.5s ease-in-out;
+}
+#iconLeft{
+    display: flex;
+    gap: 15px;
+}
+.resume-btn {
+    background: linear-gradient(45deg, #00fbff, #2c3c53); /* Coral Red to Soft Golden */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    outline: none;
+}
+
+.resume-btn:hover {
+    background: linear-gradient(45deg, #00fbff, #2c3c53); /* Reverse colors */
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.resume-btn:active {
+    transform: scale(0.95);
 }
 
 @media all and (max-width: 1000px) {
