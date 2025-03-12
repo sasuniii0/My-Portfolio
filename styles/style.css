@@ -303,3 +303,29 @@ h3{
         display: none;
     }
 }
+@media all and (max-width: 1000px){
+    #aboutPg{
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 10px;
+    }
+    #leftSide {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #rightSide {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #rightSide>p {
+        font-size: 40px;
+    }
+    #nav{
+        display: none;
+    }
+
+}
