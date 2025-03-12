@@ -47,12 +47,27 @@ nav a{
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
-
+    display: inline-block; /* Ensures the link takes up space for the underline */
+    position: relative;
+    padding-bottom: 5px;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Initially, no underline */
+    height: 2px; /* Thickness of the underline */
+    background-color: #ffffff; /* Underline color */
+    transition: width 0.3s ease; /* Smooth transition for width */
 }
 
-nav a:hover {
-    color: deepskyblue;
+/* On Hover, Show the Underline Smoothly */
+nav a:hover::after {
+    width: 100%; /* The underline expands to full width */
 }
+
+
 #iconMenu{
     display: none;
 }
@@ -257,15 +272,19 @@ h3{
 .resume-btn:active {
     transform: scale(0.95);
 }
+#aboutMe{
+    padding: 0;
+}
 .main>div{
-    justify-content: space-evenly;
+    justify-content: space-between;
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 .main>div>div{
     align-items: flex-end;
     justify-content: flex-end;
-    width: 80%;
+    width: 70%;
     height: 2px;
     background-color: white;
     transition: background-color 0.3s ease;
@@ -287,7 +306,7 @@ h3{
     }
 
     #middle {
-        width: 100%;
+        width: 70%;
     }
 
     #right {
@@ -314,7 +333,9 @@ h3{
         align-items: center;
         text-align: center;
     }
-
+    #leftSide img{
+        width: 80%;
+    }
     #rightSide {
         width: 100%;
         align-items: center;
@@ -322,7 +343,7 @@ h3{
     }
 
     #rightSide>p {
-        font-size: 40px;
+        font-size: 30px;
     }
     #nav{
         display: none;
