@@ -180,8 +180,37 @@ h3{
     align-items: center;
     padding: 10px 30px 30px 30px;
 }
+#leftSide{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 50%;
+}
+#rightSide{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+#rightSide>p{
+    font-size: 50px;
+    font-weight: 300;
+    align-items: flex-end;
+}
+#rightSide>div>p{
+    font-size: 20px;
+    font-weight: 300;
+    align-items: flex-end;
+}
+.lineAbtMe{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
 #leftImg {
-    width: 30%;
+    width: 100%;
     border-radius: 50%;
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -229,19 +258,18 @@ h3{
     transform: scale(0.95);
 }
 .main>div{
+    justify-content: space-evenly;
     display: flex;
     align-items: center;
-    padding: 10px 30px 30px 30px;
 }
 .main>div>div{
     align-items: flex-end;
     justify-content: flex-end;
-    width: 50%;
+    width: 80%;
     height: 2px;
     background-color: white;
     transition: background-color 0.3s ease;
 }
-
 @media all and (max-width: 1000px) {
     #home {
         flex-direction: column-reverse;
