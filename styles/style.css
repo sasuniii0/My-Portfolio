@@ -255,6 +255,15 @@ h3{
     display: flex;
     gap: 15px;
 }
+#iconLeft img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+#iconLeft img:hover{
+    transform: scale(1.2);
+}
 .resume-btn {
     background: linear-gradient(45deg, #00fbff, #2c3c53); /* Coral Red to Soft Golden */
     color: white;
@@ -305,7 +314,7 @@ h3{
 }
 #educationPg >div{
     width: 550px;
-    height: 250px;
+    height: auto;
     background: #0b0b40;
     padding:10px;
     border-radius: 20px;
@@ -319,13 +328,15 @@ h3{
 #educationPg>div>div{
     display: flex;
     align-items: center;
-    padding: 20px;
-}
-figure{
     width: 80%;
     height: 1px;
-    background-color: white;
-    transition: background-color 0.3s ease;
+    background: white;
+}
+.eduLine{
+    width: 80% !important;
+    background-color: white!important;
+    transition: background-color 0.3s ease!important;
+    align-items: end!important;
 }
 /* Text Styles */
 #educationPg p {
