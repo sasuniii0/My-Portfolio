@@ -429,6 +429,19 @@ h3{
     font-size: 30px;
     font-weight: 300;
 }
+.project-track>div{
+    width: 300px;
+    height: auto;
+    background: #0b0b40;
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
 @media all and (max-width: 1000px){
     .icon-track img {
         flex: 0 0 auto;
