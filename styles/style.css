@@ -462,15 +462,26 @@ h3{
 /* Hide project icon and text on hover */
 .content-track:hover img,
 .content-track:hover p {
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .project-track>div>a:nth-child(1){
     justify-content: end;
     align-content: end;
     display: flex;
     position: relative;
-    top: 120px;
+    top: 170px;
     right: 150px;
+}
+.project-track>div>p{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    top: 170px;
+    right:0;
+    font-weight: 300;
+    font-size: 20px;
+
 }
 .github-button{
 
