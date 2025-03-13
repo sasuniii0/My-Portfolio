@@ -417,7 +417,18 @@ h3{
         transform: translateX(-30%); /* Moves half way, ensuring smooth looping */
     }
 }
-
+#project>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items */
+    padding: 10px 30px 30px 30px;
+    gap: 40px;
+}
+#project>p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
 @media all and (max-width: 1000px){
     .icon-track img {
         flex: 0 0 auto;
