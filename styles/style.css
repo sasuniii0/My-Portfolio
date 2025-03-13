@@ -397,10 +397,17 @@ h3{
 /* Duplicates the icons to create a seamless effect */
 .icon-track img {
     flex: 0 0 auto;
-    font-size: 40px; /* Adjust size */
     padding: 10px;
     width: 70px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+/* Scale and add color effect on hover */
+.icon-track img:hover {
+    transform: scale(1.2); /* Increase size */
+    filter: brightness(1.5) contrast(1.2); /* Adjust colors */
+}
+
 
 /* Animation for continuous sliding */
 @keyframes slideIcons {
@@ -408,7 +415,7 @@ h3{
         transform: translateX(0);
     }
     to {
-        transform: translateX(-20%); /* Moves half way, ensuring smooth looping */
+        transform: translateX(-30%); /* Moves half way, ensuring smooth looping */
     }
 }
 @media all and (max-width: 1000px) {
