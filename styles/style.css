@@ -424,15 +424,18 @@ h3{
     padding: 10px 30px 30px 30px;
     gap: 40px;
 }
+
 #project>p{
     text-align: center;
     font-size: 30px;
     font-weight: 300;
 }
+
 .project-track>div{
     width: 300px;
     height: auto;
     background: #0b0b40;
+    position: relative;
     padding:10px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
@@ -442,6 +445,44 @@ h3{
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
+
+.content-track {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    background-color: #0A0F3C; /* Dark blue */
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.content-track:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+}
+
+/* Initially hide the button */
+.github-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #0A0F3C;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show button on hover */
+.content-track:hover .github-button {
+    opacity: 1;
+    transform: translateX(-50%) translateY(10px);
+}
+
 @media all and (max-width: 1000px){
     .icon-track img {
         flex: 0 0 auto;
