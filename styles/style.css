@@ -377,6 +377,40 @@ h3{
     box-shadow: 0 6px 15px rgb(255, 255, 255);
     transition: all 0.3s ease-in-out;
 }
+#skillsPg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items */
+    padding: 10px 30px 30px 30px;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.icon-track {
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+    width: max-content;
+    animation: slideIcons 15s linear infinite; /* Infinite scrolling */
+}
+
+/* Duplicates the icons to create a seamless effect */
+.icon-track img {
+    flex: 0 0 auto;
+    font-size: 40px; /* Adjust size */
+    padding: 10px;
+    width: 70px;
+}
+
+/* Animation for continuous sliding */
+@keyframes slideIcons {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-20%); /* Moves half way, ensuring smooth looping */
+    }
+}
 @media all and (max-width: 1000px) {
     #home {
         flex-direction: column-reverse;
