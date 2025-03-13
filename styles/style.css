@@ -268,7 +268,7 @@ h3{
     transform: scale(1.2);
 }
 .resume-btn {
-    background: linear-gradient(45deg, #00fbff, #2c3c53); /* Coral Red to Soft Golden */
+    background: linear-gradient(45deg, #0b0b40, #010205); /* Coral Red to Soft Golden */
     color: white;
     border: none;
     padding: 12px 24px;
@@ -283,7 +283,7 @@ h3{
 }
 
 .resume-btn:hover {
-    background: linear-gradient(45deg, #00fbff, #2c3c53); /* Reverse colors */
+    background: linear-gradient(45deg, #000000, #ffffff); /* Reverse colors */
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
@@ -374,7 +374,7 @@ h3{
 /* Glowing effect on hover */
 #educationPg > div:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.4);
+    box-shadow: 0 6px 15px rgb(255, 255, 255);
     transition: all 0.3s ease-in-out;
 }
 @media all and (max-width: 1000px) {
