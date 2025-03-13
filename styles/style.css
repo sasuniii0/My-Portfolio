@@ -418,6 +418,14 @@ h3{
         transform: translateX(-30%); /* Moves half way, ensuring smooth looping */
     }
 }
+@media all and (max-width: 1000px){
+    .icon-track img {
+        flex: 0 0 auto;
+        padding: 5px;
+        width: 50px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+}
 @media all and (max-width: 1000px) {
     #home {
         flex-direction: column-reverse;
