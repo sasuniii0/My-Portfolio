@@ -467,6 +467,9 @@ h3{
     font-weight: 300;
     font-size: 20px;
 }
+.content-view-button{
+    display: flex;
+}
 
 @media all and (max-width: 1000px){
     .icon-track img {
