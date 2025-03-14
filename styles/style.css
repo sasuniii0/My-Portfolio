@@ -477,8 +477,39 @@ h3{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+.content-view-button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+#project>p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+#project>div>a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+#under-project{
+    position: relative;
+}
+#project>div>a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
 }
 
+#project > div > a:hover::after {
+    width: 100%; /* Expands the underline */
+}
 @media all and (max-width: 1000px){
     .icon-track img {
         flex: 0 0 auto;
