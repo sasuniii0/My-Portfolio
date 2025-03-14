@@ -537,7 +537,6 @@ h3{
     background-color: rgb(0, 0, 0);
     opacity: 0.9;
     border: white 1px solid;
-
 }
 #assignment>div>div{
     display: flex;
@@ -560,6 +559,25 @@ h3{
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-decoration: none;
+}
+#assignment>div>a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+#assignment>div>a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+#assignment > div > a:hover::after {
+    width: 100%; /* Expands the underline */
 }
 @media all and (max-width: 1000px){
     #project>p{
