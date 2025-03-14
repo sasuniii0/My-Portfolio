@@ -511,6 +511,20 @@ h3{
     width: 100%; /* Expands the underline */
 }
 @media all and (max-width: 1000px){
+    #project>p{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 1000px){
+    #project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+
+    }
     .icon-track img {
         flex: 0 0 auto;
         padding: 5px;
