@@ -512,8 +512,9 @@ h3{
 }
 #assignment{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
     gap: 20px;
     padding: 10px;
 }
@@ -524,7 +525,7 @@ h3{
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 15px;
     text-align: center;
     background: #0A0F3C;
@@ -578,6 +579,14 @@ h3{
 
 #assignment > div > a:hover::after {
     width: 100%; /* Expands the underline */
+}
+@media all and (max-width: 1200px){
+    #assignment{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
 }
 @media all and (max-width: 1000px){
     #project>p{
