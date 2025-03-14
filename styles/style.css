@@ -473,7 +473,7 @@ h3{
     opacity: 1;
     pointer-events: auto;
 }
-.project-track>div>p{
+.project-track>div>div>p{
     display: flex;
     justify-content: center;
     align-items: center;
