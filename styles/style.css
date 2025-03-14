@@ -532,6 +532,28 @@ h3{
         transition: transform 0.3s ease, filter 0.3s ease;
     }
 }
+@media all and (max-width: 429px){
+    #nav{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #iconMenu{
+        right: 10px;
+        padding-right: 10px;
+        display: block;
+        width: 20px;
+        text-align: center;
+    }
+    header>div>h2{
+        font-size: 10px;
+        text-align: left;
+    }
+}
 @media all and (max-width: 1000px) {
     #home {
         flex-direction: column-reverse;
