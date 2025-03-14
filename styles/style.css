@@ -432,7 +432,7 @@ h3{
 }
 
 .content-track {
-    height: 150px;
+    height: 170px;
     width: 300px; /* Adjust as needed */
     background-color: #0A0F3C; /* Dark blue */
     color: white;
@@ -456,23 +456,6 @@ h3{
     transform: translate(-50%, -50%) scale(1.1);
     pointer-events: auto; /* Allows clicking */
 }
-
-/* Hide project icon and text on hover */
-.content-track:hover img,
-.content-track:hover p ,
-.content-track:hover .github-button{
-    opacity: 1;
-}
-.github-button,
-.project-track>div>p{
-    position: absolute;
-    top: 38%;
-}
-.github-button:hover,
-.project-track>div>p:hover{
-    opacity: 1;
-    pointer-events: auto;
-}
 .project-track>div>div>p{
     display: flex;
     justify-content: center;
@@ -484,6 +467,7 @@ h3{
     font-weight: 300;
     font-size: 20px;
 }
+
 @media all and (max-width: 1000px){
     .icon-track img {
         flex: 0 0 auto;
