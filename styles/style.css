@@ -442,7 +442,6 @@ h3{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     transition: background-color 0.3s ease, opacity 0.3s ease;
-
 }
 .content-track:hover {
     transform: scale(1.05); /* Slightly enlarge the card */
@@ -469,6 +468,8 @@ h3{
 }
 .content-view-button{
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     background: linear-gradient(45deg, #0b0b40, #010205); /* Coral Red to Soft Golden */
     color: white;
@@ -477,7 +478,6 @@ h3{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
 }
 
 @media all and (max-width: 1000px){
