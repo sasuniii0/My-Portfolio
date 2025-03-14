@@ -440,11 +440,9 @@ h3{
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
     overflow: hidden;
-}
-.content-track {
     transition: background-color 0.3s ease, opacity 0.3s ease;
+
 }
 .content-track:hover {
     transform: scale(1.05); /* Slightly enlarge the card */
@@ -453,7 +451,7 @@ h3{
     border: white 1px solid;
 }
 
-.content-track:hover .github-button {
+.content-track:hover.github-button {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.1);
     pointer-events: auto; /* Allows clicking */
@@ -461,16 +459,26 @@ h3{
 
 /* Hide project icon and text on hover */
 .content-track:hover img,
-.content-track:hover p {
-    opacity: 0.1;
+.content-track:hover p ,
+.content-track:hover .github-button{
+    opacity: 1;
 }
-.project-track>div>a:nth-child(1){
-    display: flex;
-    top: 170px;
-    right: 150px;
+.github-button,
+.project-track>div>p{
+    position: absolute;
+    top: 38%;
+}
+.github-button:hover,
+.project-track>div>p:hover{
+    opacity: 1;
+    pointer-events: auto;
 }
 .project-track>div>p{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: inherit;
     top: 170px;
     right:0;
     font-weight: 300;
