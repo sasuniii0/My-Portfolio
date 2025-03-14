@@ -469,6 +469,15 @@ h3{
 }
 .content-view-button{
     display: flex;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #0b0b40, #010205); /* Coral Red to Soft Golden */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 @media all and (max-width: 1000px){
