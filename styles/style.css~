@@ -631,15 +631,15 @@ h3{
 }
 #galleryImg>div:nth-child(6){
     grid-column: 1/5;
-    grid-row: 6/12;
+    grid-row: 5/12;
 }
 #galleryImg>div:nth-child(7){
     grid-column: 5/9;
-    grid-row: 6/12;
+    grid-row: 5/12;
 }
 #galleryImg>div:nth-child(8){
     grid-column: 9/13;
-    grid-row: 6/12;
+    grid-row: 5/12;
 }
 #galleryImg>div:nth-child(9) {
     grid-column: 13/17;
