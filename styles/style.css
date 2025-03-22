@@ -40,8 +40,8 @@ header{
 }
 #nav{
     display: flex;
-    gap: 20px;
-    right: 0;
+    gap: 30px;
+    right: 30px;
     top: 0;
     position: absolute;
     background-color: black;
@@ -163,7 +163,7 @@ nav a:hover::after {
     flex-direction: column;
     align-items: flex-end;
     width: 30%;
-    padding: 0 0 0 0;
+    padding: 0 10px 0 0;
     text-align: right;
     gap: 10px;
 }
@@ -597,17 +597,20 @@ h3{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     gap: 5px;
     width: 90vw;
     height: 90vh;
     overflow: hidden;
 }
+#hide{
+    display: none;
+}
 #galleryImg>div>img {
-    background: deepskyblue;
-    border: 1px solid darkblue;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
 }
 #galleryImg>div:nth-child(1){
     grid-column: 1/4;
@@ -631,19 +634,121 @@ h3{
 }
 #galleryImg>div:nth-child(6){
     grid-column: 1/5;
-    grid-row: 6/12;
+    grid-row: 6/13;
 }
 #galleryImg>div:nth-child(7){
     grid-column: 5/9;
-    grid-row: 6/12;
+    grid-row: 6/13;
 }
 #galleryImg>div:nth-child(8){
     grid-column: 9/13;
-    grid-row: 6/12;
+    grid-row: 6/13;
 }
 #galleryImg>div:nth-child(9) {
     grid-column: 13/17;
-    grid-row: 8/12;
+    grid-row: 8/13;
+}
+#gallerySection>p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+#gallerySection>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#gallerySection > div > a {
+    position: relative; /* Make the <a> a reference for the absolute ::after */
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Ensures proper sizing */
+    padding: 5px 0; /* Adds space for the underline */
+}
+
+#gallerySection>div>a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+#gallerySection>div>a:hover::after {
+    width: 100%; /* Expands the underline */
+}
+@media all and (max-width: 1000px){
+    #hidegal{
+        display: none;
+    }
+    #hide{
+        display: block;
+    }
+    #galleryImg{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+        width: 90vw;
+        height: 90vh;
+        overflow: hidden;
+    }
+    #galleryImg>div:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #galleryImg>div:nth-child(2){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #galleryImg>div:nth-child(3){
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #galleryImg>div:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #galleryImg>div:nth-child(5){
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #galleryImg>div:nth-child(6){
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #galleryImg>div:nth-child(7){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #galleryImg>div:nth-child(8){
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #galleryImg>div:nth-child(9){
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+}
+@media all and (max-width: 429px){
+    #hidegal{
+        display: none;
+    }
+    #hide{
+        display: block;
+    }
+    #galleryImg{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+        width: 90vw;
+        height: 90vh;
+        overflow: hidden;
+    }
 }
 @media all and (max-width: 1200px){
     #assignment{
