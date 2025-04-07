@@ -512,28 +512,81 @@ h3{
 }
 #assignment{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    justify-items: center;
     margin-left: 60px;
     margin-right: 60px;
     gap: 10px;
     padding: 10px;
-    justify-content: center; /* Centers items */
 }
-#assignment > div {
-    display: flex;
-    align-items: center;        /* Vertically centers */
-    justify-content: center;    /* Horizontally centers */
-    flex-direction: column;
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
+#assignment>div{
+    width: 180px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
     background: #0A0F3C;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
+#assignment>div>p{
+    font-size: 20px;
+    font-weight: 200;
+}
+#assignment>div:hover {
+    transform: scale(1.05);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    border: white 1px solid;
+}
+#assignment>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: inherit;
+    top: 170px;
+    right:0;
+    gap: 20px;
+    font-size: 18px;
+}
+#assignment>div>div>button{
+    background: white;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+#assignment>div>a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+#assignment>div>a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
 
+#assignment > div > a:hover::after {
+    width: 100%;
+}
+.assign{
+    width: 40px;
+}
 /*
 #assignment{
     display: flex;
@@ -701,10 +754,10 @@ h3{
     background-color: #ffffff;
     transition: width 0.3s ease;
 }
-
 #gallerySection>div>a:hover::after {
     width: 100%; /* Expands the underline */
 }
+/*Gallery*/
 @media all and (max-width: 1000px){
     #hidegal{
         display: none;
@@ -758,6 +811,7 @@ h3{
         grid-row: 3/4;
     }
 }
+/*Gallery*/
 @media all and (max-width: 429px){
     #hidegal{
         display: none;
@@ -775,6 +829,7 @@ h3{
         overflow: hidden;
     }
 }
+/*Assignment*/
 @media all and (max-width: 1200px){
     #assignment{
         display: grid;
@@ -788,6 +843,7 @@ h3{
         width: 200px;
     }
 }
+/*Assignment*/
 @media all and (max-width: 429px) {
     #assignment{
         display: grid;
@@ -807,6 +863,7 @@ h3{
         font-size: 6px;
     }
 }
+/*Assignment*/
 @media all and (max-width: 800px) {
     #assignment{
         display: grid;
@@ -820,11 +877,13 @@ h3{
         font-size: 18px;
     }
 }
+/*Project*/
 @media all and (max-width: 1000px){
     #project>p{
         font-size: 20px;
     }
 }
+/*Project*/
 @media all and (max-width: 1000px){
     #project{
         display: flex;
@@ -842,6 +901,7 @@ h3{
         transition: transform 0.3s ease, filter 0.3s ease;
     }
 }
+/*Project*/
 @media all and (max-width: 429px){
     #nav{
         display: none;
@@ -864,6 +924,39 @@ h3{
         text-align: left;
     }
 }
+/*education*/
+@media all and (max-width: 1000px){
+
+}
+
+/*about*/
+@media all and (max-width: 1000px){
+    #aboutPg{
+        flex-direction: column-reverse !important;
+        padding: 10px !important;
+        gap: 10px !important;
+    }
+    #leftSide {
+        width: 100% !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    #leftSide img{
+        width: 80% !important;
+    }
+    #rightSide {
+        width: 100% !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    #rightSide>p {
+        font-size: 30px !important;
+    }
+    #nav{
+        display: none !important;
+    }
+}
+/*home*/
 @media all and (max-width: 1000px) {
     #home {
         flex-direction: column-reverse;
@@ -897,35 +990,4 @@ h3{
         display: none;
     }
 }
-@media all and (max-width: 1000px){
-    #aboutPg{
-        flex-direction: column-reverse !important;
-        padding: 10px !important;
-        gap: 10px !important;
-    }
-    #leftSide {
-        width: 100% !important;
-        align-items: center !important;
-        text-align: center !important;
-    }
-    #leftSide img{
-        width: 80% !important;
-    }
-    #rightSide {
-        width: 100% !important;
-        align-items: center !important;
-        text-align: center !important;
-    }
-    #rightSide>p {
-        font-size: 30px !important;
-    }
-    #nav{
-        display: none !important;
-    }
-}
 
-@media all and (max-width: 300px) {
-    #educationPg{
-
-    }
-}
