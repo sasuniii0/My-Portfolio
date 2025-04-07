@@ -957,7 +957,75 @@ h3{
     }
 }
 /*home*/
-@media all and (max-width: 1000px) {
+@media all and (max-width: 425px) {
+    #home {
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 10px;
+    }
+    #iconMenu{
+        display: block;
+        width: 10px;
+        margin-right: 50px;
+    }
+
+    #left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #middle {
+        width: 50%;
+    }
+
+    #right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #right div:nth-child(1) {
+        font-size: 20px;
+    }
+    #nav{
+        display: none;
+    }
+}
+@media all and (max-width: 768px) {
+    #home {
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 10px;
+    }
+    #iconMenu{
+        display: block;
+    }
+
+    #left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #middle {
+        width: 50%;
+    }
+
+    #right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #right div:nth-child(1) {
+        font-size: 20px;
+    }
+    #nav{
+        display: none;
+    }
+}
+@media all and (max-width: 1024px) {
     #home {
         flex-direction: column-reverse;
         padding: 10px;
@@ -984,10 +1052,8 @@ h3{
     }
 
     #right div:nth-child(1) {
-        font-size: 40px;
+        font-size: 42px;
     }
-    #nav{
-        display: none;
-    }
+
 }
 
