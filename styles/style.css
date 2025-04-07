@@ -976,7 +976,10 @@ h3{
     }
 
     #middle {
-        width: 50%;
+        width: 80%;
+    }
+    #middle>img{
+        width: 90%;
     }
 
     #right {
@@ -1011,7 +1014,9 @@ h3{
     #middle {
         width: 50%;
     }
-
+    #middle>img{
+        width: 80%;
+    }
     #right {
         width: 100%;
         align-items: center;
