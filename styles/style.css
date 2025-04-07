@@ -511,10 +511,35 @@ h3{
     width: 100%; /* Expands the underline */
 }
 #assignment{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 60px;
+    margin-right: 60px;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center; /* Centers items */
+}
+#assignment > div {
     display: flex;
-    flex-wrap: wrap; /* Allows responsiveness */
-    justify-content: center; /* Centers all divs horizontally */
-    align-items: center; /* Centers divs vertically */
+    align-items: center;        /* Vertically centers */
+    justify-content: center;    /* Horizontally centers */
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+    background: #0A0F3C;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/*
+#assignment{
+    display: flex;
+    flex-wrap: wrap; !* Allows responsiveness *!
+    justify-content: center; !* Centers all divs horizontally *!
+    align-items: center; !* Centers divs vertically *!
     text-align: center;
     gap: 20px;
     padding: 10px;
@@ -579,8 +604,8 @@ h3{
 }
 
 #assignment > div > a:hover::after {
-    width: 100%; /* Expands the underline */
-}
+    width: 100%; !* Expands the underline *!
+}*/
 /*#galleryImg {
     position: relative;
     margin: 0 auto;
