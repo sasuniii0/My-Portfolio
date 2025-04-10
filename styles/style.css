@@ -829,8 +829,8 @@ h3{
         overflow: hidden;
     }
 }
-/*Assignment*/
-@media all and (max-width: 1200px){
+/*Assignment responsive*/
+@media all and (max-width: 1024px){
     #assignment{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -843,7 +843,7 @@ h3{
         width: 200px;
     }
 }
-/*Assignment*/
+/*Assignment responsive*/
 @media all and (max-width: 429px) {
     #assignment{
         display: grid;
