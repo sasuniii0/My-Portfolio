@@ -780,7 +780,7 @@ h3{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    display: flex;
+    object-fit: cover;
 }
 /*Gallery responsive for laptop*/
 @media all and (max-width: 1024px){
