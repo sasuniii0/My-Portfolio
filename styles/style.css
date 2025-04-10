@@ -956,8 +956,8 @@ h3{
         display: none !important;
     }
 }
-/*home*/
-@media all and (max-width: 425px) {
+/*home responsive for mobile*/
+@media all and (max-width: 430px) {
     #home {
         flex-direction: column-reverse;
         padding: 10px;
@@ -988,6 +988,18 @@ h3{
         text-align: center;
     }
 
+    #assignment>div{
+        width: 120px;
+        font-size: 10px;
+    }
+    #assignment>div>div>button{
+        padding: 5px;
+        text-align: center;
+        font-size: 15px;
+    }
+    #assignment>div>p{
+        font-size: 15px;
+    }
     #right div:nth-child(1) {
         font-size: 20px;
     }
