@@ -811,12 +811,11 @@ h3{
 /* Tablets (<= 1024px) */
 @media (max-width: 1024px) {
     #achievementsPg {
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    #achievementsPg > div {
-        width: 45%; /* Two cards per row */
+        align-content: center;
+        overflow: hidden !important;
     }
 }
 
@@ -827,9 +826,6 @@ h3{
         align-items: center;
         gap: 15px;
         overflow: hidden;
-    }
-    #achievementsPg > div {
-        width: 70%;
     }
 }
 /*Gallery responsive for laptop*/
@@ -1184,7 +1180,7 @@ h3{
     }
     #iconMenu{
         display: block;
-        width: 8px;!important;
+        width: 70px;!important;
         margin-right: 50px;
         padding-right: 10px;
     }
@@ -1238,6 +1234,7 @@ h3{
     }
     #iconMenu{
         display: block;
+        width: 70px;!important;
     }
 
     #left {
