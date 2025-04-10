@@ -759,9 +759,28 @@ h3{
 }
 #achievementsPg{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center; /* Centers items */
     gap: 20px;
+    padding: 10px 30px 30px 30px;
+}
+#achievementsPg>div{
+    width: 300px;
+    height: 300px;
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+#achievementsPg>div>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
 }
 /*Gallery responsive for laptop*/
 @media all and (max-width: 1024px){
