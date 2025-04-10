@@ -1007,6 +1007,7 @@ h3{
         display: none;
     }
 }
+/*home responsive for tab*/
 @media all and (max-width: 768px) {
     #home {
         flex-direction: column-reverse;
