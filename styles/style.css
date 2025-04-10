@@ -1043,6 +1043,7 @@ h3{
         display: none;
     }
 }
+/*home responsive for laptop*/
 @media all and (max-width: 1024px) {
     #home {
         flex-direction: column-reverse;
