@@ -787,6 +787,12 @@ h3{
     align-items: center;
     gap: 20px;
 }
+#map{
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
 /* Laptop screens (<= 1440px) */
 @media (max-width: 1440px) {
     #achievementsPg {
