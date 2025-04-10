@@ -883,7 +883,7 @@ h3{
         font-size: 20px;
     }
 }
-/*Project*/
+/*Project responsive*/
 @media all and (max-width: 1000px){
     #project{
         display: flex;
