@@ -848,6 +848,19 @@ h3{
     }
 }
 /*Assignment responsive*/
+@media all and (max-width: 800px){
+    #assignment{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 60px;
+        margin-right: 60px;
+        gap: 10px;
+        padding: 10px;
+    }
+    #assignment>div{
+        width: 150px;
+    }
+}
 @media all and (max-width: 1024px){
     #assignment{
         display: grid;
