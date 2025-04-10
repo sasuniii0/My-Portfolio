@@ -781,6 +781,12 @@ h3{
     gap: 10px;
     object-fit: cover;
 }
+#getInTouch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 /* Laptop screens (<= 1440px) */
 @media (max-width: 1440px) {
     #achievementsPg {
