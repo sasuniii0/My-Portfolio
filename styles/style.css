@@ -934,6 +934,26 @@ h3{
         gap: 20px;
         padding: 10px;
     }
+    #education>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    #education>div>div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    #education>div>div>p{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
 }
 
 /*about*/
