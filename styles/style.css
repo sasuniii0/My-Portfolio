@@ -965,14 +965,16 @@ h3{
     }
     #iconMenu{
         display: block;
-        width: 10px;
+        width: 8px;!important;
         margin-right: 50px;
+        padding-right: 10px;
     }
 
     #left {
         width: 100%;
         align-items: center;
         text-align: center;
+        font-size: 10px;
     }
 
     #middle {
@@ -986,6 +988,7 @@ h3{
         width: 100%;
         align-items: center;
         text-align: center;
+        font-size: 8px;
     }
 
     #assignment>div{
