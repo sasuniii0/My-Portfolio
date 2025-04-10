@@ -817,21 +817,19 @@ h3{
     }
     #achievementsPg > div {
         width: 45%; /* Two cards per row */
-        height: auto;
     }
 }
 
 /* Phones (<= 600px) */
-@media (max-width: 600px) {
+@media (max-width: 420px) {
     #achievementsPg {
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        padding: 20px 10px;
+        overflow: hidden;
     }
     #achievementsPg > div {
-        width: 90%;
-        height: auto;
+        width: 70%;
     }
 }
 /*Gallery responsive for laptop*/
