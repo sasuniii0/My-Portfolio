@@ -811,6 +811,24 @@ h3{
         grid-row: 3/4;
     }
 }
+/*Gallery responsive for tablet*/
+@media all and (max-width: 768px){
+    #hidegal{
+        display: none;
+    }
+    #hide{
+        display: block;
+    }
+    #galleryImg{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+        width: 90vw;
+        height: 90vh;
+        overflow: hidden;
+    }
+}
 /*Gallery responsive for mobile*/
 @media all and (max-width: 429px){
     #hidegal{
