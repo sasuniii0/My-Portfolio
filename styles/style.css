@@ -757,6 +757,7 @@ h3{
 #gallerySection>div>a:hover::after {
     width: 100%; /* Expands the underline */
 }
+#
 /*Gallery responsive for laptop*/
 @media all and (max-width: 1024px){
     #hidegal{
