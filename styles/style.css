@@ -954,6 +954,11 @@ h3{
         font-weight: 300;
         line-height: 1.5;
     }
+    #education>div>div>button{
+        padding: 5px;
+        text-align: center;
+        font-size: 15px;
+    }
 }
 
 /*about*/
