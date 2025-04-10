@@ -851,28 +851,21 @@ h3{
 @media all and (max-width: 1440px){
     #assignment{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-left: 60px;
         margin-right: 60px;
         gap: 10px;
         padding: 10px;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
-        align-content: center;
     }
     #assignment>div{
         width: 200px;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
     }
 }
 /*Assignment responsive*/
 @media all and (max-width: 800px){
     #assignment{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-left: 60px;
         margin-right: 60px;
         gap: 10px;
