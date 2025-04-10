@@ -924,8 +924,8 @@ h3{
         text-align: left;
     }
 }
-/*education*/
-@media all and (max-width: 1000px){
+/*education responsive for laptop*/
+@media all and (max-width: 1024px){
     #education{
         display: flex;
         flex-direction: column;
