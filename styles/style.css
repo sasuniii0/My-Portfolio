@@ -757,7 +757,12 @@ h3{
 #gallerySection>div>a:hover::after {
     width: 100%; /* Expands the underline */
 }
-#
+#achievementsPg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items */
+    gap: 20px;
+}
 /*Gallery responsive for laptop*/
 @media all and (max-width: 1024px){
     #hidegal{
