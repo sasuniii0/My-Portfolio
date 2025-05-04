@@ -832,6 +832,13 @@ body.dark-mode #darkModeToggle {
     color: white;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
 /* Laptop screens (<= 1440px) */
 @media (max-width: 1440px) {
     #achievementsPg {
