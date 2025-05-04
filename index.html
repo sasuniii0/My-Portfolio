@@ -510,52 +510,56 @@
             </div>
             </section>
 
-        <section>
+        <section id="contact">
             <!--gmail and location-->
             <div id="ContactRight">
                 <div id="GmailAndLocation">
-                    <div id="inquaries">
-                        <img src="assets/gmail.png" alt="gmail" width="50">
+                    <div class="contact-item">
+                        <img src="assets/gmail.png" alt="gmail" width="50" loading = "lazy">
                         <p>mailto: sasuniwijerathne@gmail</p>
                     </div>
                     <div>
-                        <img src="assets/location.png" alt="location" width="50">
-                        <p>Sri Lanka, Western Province,Piliyandala</p>
+                        <img src="assets/location.png" alt="location" width="50" loading="lazy">
+                        <address class="contact-text">Sri Lanka, Western Province,Piliyandala</address>
                     </div>
                 </div>
                 <!--form-->
-                <form id="form">
-                    <div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
                         <label for = "first-name">First Name</label><br>
                         <input type = "text"
                                id = "first-name"
-                               placeholder=" Enter First Name">
+                               placeholder=" Enter First Name" required>
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for = "last-name">Last Name</label><br>
                         <input type = "text"
                                id = "last-name"
-                               placeholder=" Enter Last Name">
+                               placeholder=" Enter Last Name" required>
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for = "subject">Email</label><br>
                         <input type = "text"
                                id = "subject"
-                               placeholder=" Enter Email">
+                               placeholder=" Enter Email" required>
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for = "message">Message</label><br>
                         <input type = "text"
                                id = "message"
-                               placeholder=" Enter Message">
+                               placeholder=" Enter Message" required>
                     </div><br>
-                    <button type = "submit">Submit</button>
+                    <button type = "submit" class="submit-btn">
+                        <span>Submit</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
                 </form>
             </div>
-            <div>
-                <p>Back to top</p>
-                <img src="assets/top.png" alt="top" width="50">
-            </div>
+            <button id="backToTop" class="back-to-top" aria-label="Back to top">
+                <img src="assets/top.png" alt="Back to top" width="40" loading="lazy">
+            </button>
         </section>
     </main>
 </main>
