@@ -793,16 +793,33 @@ h3{
     align-items: center;
     gap: 20px;
 }
-#map{
-    width: 70%;
-    height: 300px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-    animation: float 3s ease;
-    animation-iteration-count: infinite;
+.map-container {
+    width: 100%;       /* Takes full width of parent */
+    max-width: 800px;  /* Optional: Limits maximum width */
+    margin: 0 auto;    /* Centers the map horizontally */
+    padding: 10px;     /* Adds some spacing around */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;   /* Ensures rounded corners apply */
+}
 
+.map-container iframe {
+    width: 100%;       /* Fills the container */
+    height: 450px;     /* Fixed height (adjust as needed) */
+    border: 0;         /* Removes default iframe border */
+    display: block;    /* Removes extra space below iframe */
+}
+
+@media (prefers-color-scheme: dark) {
+    .map-container {
+        filter: brightness(0.9) contrast(1.1);
+
+    }
+}
+.map-container:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+    animation: inherit;
 }
 
 /* Laptop screens (<= 1440px) */
