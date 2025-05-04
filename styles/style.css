@@ -854,6 +854,7 @@ body.dark-mode #darkModeToggle {
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: all 0.3s ease;
+    width: 60vw;
     padding: 2rem;
     border-radius: 12px;
 }
@@ -945,6 +946,72 @@ body.dark-mode #darkModeToggle {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+}
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    background: var(--primary-color);
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon img {
+    filter: brightness(0) invert(1);
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.contact-text {
+    font-style: normal;
+    line-height: 1.5;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.contact-label {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+     opacity: 0.8;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .contact-info-container {
+        background: rgba(30, 30, 30, 0.7);
+    }
 }
 
 /* Laptop screens (<= 1440px) */
