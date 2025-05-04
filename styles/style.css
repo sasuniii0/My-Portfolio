@@ -510,82 +510,95 @@ h3{
 #project > div > a:hover::after {
     width: 100%; /* Expands the underline */
 }
-#assignment{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-content: center;
-    justify-items: center;
-    margin-left: 60px;
-    margin-right: 60px;
-    gap: 10px;
-    padding: 10px;
-}
-#assignment>div{
-    width: 180px;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
+
+
+
+.section-header {
     text-align: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-    transition: background-color 0.3s ease, opacity 0.3s ease;
-}
-#assignment>div>p{
-    font-size: 20px;
-    font-weight: 200;
-}
-#assignment>div:hover {
-    transform: scale(1.05);
-    background-color: rgb(0, 0, 0);
-    opacity: 0.9;
-    border: white 1px solid;
-}
-#assignment>div>div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: inherit;
-    top: 170px;
-    right:0;
-    gap: 20px;
-    font-size: 18px;
-}
-#assignment>div>div>button{
-    background: white;
-    color: black;
-    border-radius: 20px;
-    border: 1px solid black;
-    padding: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-}
-#assignment>div>a{
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-}
-#assignment>div>a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
+    margin-bottom: 2rem;
 }
 
-#assignment > div > a:hover::after {
-    width: 100%;
+.section-title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
 }
-.assign{
-    width: 40px;
+
+.title-underline {
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    margin: 0 auto;
 }
+
+.assignments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.assignment-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.assignment-card:hover {
+    transform: translateY(-5px);
+}
+
+.assignment-title {
+    color: #3498db;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.doc-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.doc-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.doc-btn:hover {
+    background: #2980b9;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #3498db;
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
 /*
 #assignment{
     display: flex;
@@ -756,6 +769,8 @@ h3{
 #gallerySection>div>a:hover::after {
     width: 100%; /* Expands the underline */
 }
+
+
 #achievementsPg{
     display: flex;
     justify-content: center; /* Centers items */
