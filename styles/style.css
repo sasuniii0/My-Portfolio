@@ -947,6 +947,9 @@ body.dark-mode #darkModeToggle {
     margin: 0 auto;
     padding: 1rem;
 }
+#getInTouch{
+    display: block;
+}
 .contact-info-container {
     display: flex;
     flex-direction: column;
@@ -1007,6 +1010,40 @@ body.dark-mode #darkModeToggle {
      opacity: 0.8;
 }
 
+@media all and (max-width: 1024px) {
+    #inquaries {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-wrapper{
+        width: 80%;
+        height: 400px;
+    }
+}
+@media all and (max-width: 600px) {
+    #inquaries {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-wrapper{
+        width: 70%;
+        height: 300px;
+    }
+}
+@media all and (max-width: 420px) {
+    #inquaries {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-wrapper{
+        width: 90%;
+        height: 300px;
+    }
+
+}
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     .contact-info-container {
