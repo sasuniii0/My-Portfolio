@@ -492,74 +492,75 @@
             <h3><b>Get in Touch</b></h3>
             <div></div>
         </div>
-        <section id="getInTouch">
-            <!--mapping-->
-            <div class="map-wrapper">
-                <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
-                <div class="map-container">
-                    <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63389.39085189601!2d79.89510952116818!3d6.789688842355045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24f91d281cc5d%3A0xea4b2fcd3ce0e74e!2sPiliyandala!5e0!3m2!1sen!2slk!4v1738842717564!5m2!1sen!2slk"
-                            width="600"
-                            height="450"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+        <section id="inquaries">
+            <section id="getInTouch">
+                <!--mapping-->
+                <div class="map-wrapper">
+                    <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
+                    <div class="map-container">
+                        <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63389.39085189601!2d79.89510952116818!3d6.789688842355045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24f91d281cc5d%3A0xea4b2fcd3ce0e74e!2sPiliyandala!5e0!3m2!1sen!2slk!4v1738842717564!5m2!1sen!2slk"
+                                width="600"
+                                height="450"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
-            </div>
             </section>
-
-        <section id="contact">
-            <!--gmail and location-->
-            <div id="ContactRight">
-                <div id="GmailAndLocation">
-                    <div class="contact-item">
-                        <img src="assets/gmail.png" alt="gmail" width="50" loading = "lazy">
-                        <p>mailto: sasuniwijerathne@gmail</p>
+            <section id="contact">
+                <!--gmail and location-->
+                <div id="ContactRight">
+                    <div id="GmailAndLocation">
+                        <div class="contact-item">
+                            <img src="assets/gmail.png" alt="gmail" width="50" loading = "lazy">
+                            <p>mailto: sasuniwijerathne@gmail</p>
+                        </div>
+                        <div>
+                            <img src="assets/location.png" alt="location" width="50" loading="lazy">
+                            <address class="contact-text">Sri Lanka, Western Province,Piliyandala</address>
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/location.png" alt="location" width="50" loading="lazy">
-                        <address class="contact-text">Sri Lanka, Western Province,Piliyandala</address>
-                    </div>
+                    <!--form-->
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for = "first-name">First Name</label><br>
+                            <input type = "text"
+                                   id = "first-name"
+                                   placeholder=" Enter First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for = "last-name">Last Name</label><br>
+                            <input type = "text"
+                                   id = "last-name"
+                                   placeholder=" Enter Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for = "subject">Email</label><br>
+                            <input type = "text"
+                                   id = "subject"
+                                   placeholder=" Enter Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for = "message">Message</label><br>
+                            <input type = "text"
+                                   id = "message"
+                                   placeholder=" Enter Message" required>
+                        </div><br>
+                        <button type = "submit" class="submit-btn">
+                            <span>Submit</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
-                <!--form-->
-                <form id="contactForm" class="contact-form">
-                    <div class="form-group">
-                        <label for = "first-name">First Name</label><br>
-                        <input type = "text"
-                               id = "first-name"
-                               placeholder=" Enter First Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for = "last-name">Last Name</label><br>
-                        <input type = "text"
-                               id = "last-name"
-                               placeholder=" Enter Last Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for = "subject">Email</label><br>
-                        <input type = "text"
-                               id = "subject"
-                               placeholder=" Enter Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for = "message">Message</label><br>
-                        <input type = "text"
-                               id = "message"
-                               placeholder=" Enter Message" required>
-                    </div><br>
-                    <button type = "submit" class="submit-btn">
-                        <span>Submit</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </button>
-                </form>
-            </div>
-            <button id="backToTop" class="back-to-top" aria-label="Back to top">
-                <img src="assets/top.png" alt="Back to top" width="40" loading="lazy">
-            </button>
+                <button id="backToTop" class="back-to-top" aria-label="Back to top">
+                    <img src="assets/top.png" alt="Back to top" width="40" loading="lazy">
+                </button>
+            </section>
         </section>
     </main>
 </main>
@@ -659,6 +660,61 @@
         window.addEventListener('resize', adjustMapHeight);
         adjustMapHeight();
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Basic validation
+            const email = document.getElementById('email').value;
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+
+            // Form data collection
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+
+            // Here you would typically send to a server
+            console.log('Form submitted:', data);
+            alert('Thank you for your message!');
+            contactForm.reset();
+        });
+
+        // Email validation helper
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    });
+
+    // Dark Mode Toggle (if you have one)
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    }
 </script>
 </body>
 </html>

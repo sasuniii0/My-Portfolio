@@ -832,11 +832,119 @@ body.dark-mode #darkModeToggle {
     color: white;
 }
 
-form{
+/* Light Mode Defaults */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #4a6fa5;
+    --input-bg: #f5f5f5;
+    --border-color: #ddd;
+}
+
+/* Dark Mode Variables */
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --primary-color: #6d9eeb;
+    --input-bg: #2d2d2d;
+    --border-color: #444;
+}
+
+#contact {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-link, .contact-text {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+}
+
+.contact-form {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+#inquaries{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 /* Laptop screens (<= 1440px) */
