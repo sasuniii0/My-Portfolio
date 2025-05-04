@@ -494,17 +494,21 @@
         </div>
         <section id="getInTouch">
             <!--mapping-->
-            <div class="map-container">
-                <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63389.39085189601!2d79.89510952116818!3d6.789688842355045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24f91d281cc5d%3A0xea4b2fcd3ce0e74e!2sPiliyandala!5e0!3m2!1sen!2slk!4v1738842717564!5m2!1sen!2slk"
-                        width="600"
-                        height="450"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="map-wrapper">
+                <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
+                <div class="map-container">
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63389.39085189601!2d79.89510952116818!3d6.789688842355045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24f91d281cc5d%3A0xea4b2fcd3ce0e74e!2sPiliyandala!5e0!3m2!1sen!2slk!4v1738842717564!5m2!1sen!2slk"
+                            width="600"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
+
 
             <!--gmail and location-->
             <div id="ContactRight">
@@ -613,6 +617,43 @@
             </div>
         </footer>
     </main>
+<script src="lib/jquery-3.7.1.js" ></script>
 <script rel="stylesheet" src="lib/fontawesome/js/all.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const mapIframe = document.getElementById('mapIframe');
+        const body = document.body;
+
+        // Check for saved user preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+        }
+
+        // Toggle dark mode
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+
+            // Save preference
+            localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+
+            // Update map dynamically (optional)
+            if (isDarkMode) {
+                mapIframe.style.filter = 'invert(90%) hue-rotate(180deg)';
+            } else {
+                mapIframe.style.filter = 'none';
+            }
+        });
+
+        // Responsive height adjustment
+        function adjustMapHeight() {
+            mapIframe.style.height = `${window.innerHeight * 0.6}px`;
+        }
+        window.addEventListener('resize', adjustMapHeight);
+        adjustMapHeight();
+    });
+</script>
 </body>
 </html>

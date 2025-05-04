@@ -793,33 +793,43 @@ h3{
     align-items: center;
     gap: 20px;
 }
+
+.map-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#darkModeToggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
 .map-container {
-    width: 100%;       /* Takes full width of parent */
-    max-width: 800px;  /* Optional: Limits maximum width */
-    margin: 0 auto;    /* Centers the map horizontally */
-    padding: 10px;     /* Adds some spacing around */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    overflow: hidden;   /* Ensures rounded corners apply */
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: filter 0.5s ease;
 }
 
-.map-container iframe {
-    width: 100%;       /* Fills the container */
-    height: 450px;     /* Fixed height (adjust as needed) */
-    border: 0;         /* Removes default iframe border */
-    display: block;    /* Removes extra space below iframe */
+/* Dark Mode Styles */
+body.dark-mode .map-container iframe {
+    filter: invert(90%) hue-rotate(180deg) brightness(0.8) contrast(1.2);
 }
 
-@media (prefers-color-scheme: dark) {
-    .map-container {
-        filter: brightness(0.9) contrast(1.1);
-
-    }
-}
-.map-container:hover {
-    transform: scale(1.01);
-    transition: transform 0.3s ease;
-    animation: inherit;
+body.dark-mode #darkModeToggle {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
 }
 
 /* Laptop screens (<= 1440px) */
