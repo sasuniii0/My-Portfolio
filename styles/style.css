@@ -771,30 +771,70 @@ h3{
 }
 
 
-#achievementsPg{
-    display: flex;
-    justify-content: center; /* Centers items */
-    gap: 20px;
-    padding: 10px 30px 30px 30px;
-}
-#achievementsPg>div{
-    width: 300px;
-    height: 300px;
-    padding:10px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Achievements Section */
+.achievements-header {
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 2rem;
 }
-#achievementsPg>div>div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+
+.achievements-header h3 {
+    color: #3498db;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-underline {
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 0 auto;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background-color: #34495e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-img {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
+    border-bottom: 2px solid #3498db;
+}
+
+.achievement-details {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.achievement-details p {
+    color: #ecf0f1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
 }
 #getInTouch{
     display: flex;
