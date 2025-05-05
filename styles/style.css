@@ -1741,6 +1741,101 @@ body.dark-mode #darkModeToggle {
     }
 
 }
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .map-wrapper, .contact-info-container {
+        min-width: 100%;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .form-group input {
+        padding: 0.7rem;
+    }
+
+    .submit-btn {
+        padding: 0.7rem 1.2rem;
+    }
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+}
+
+/* Tablet (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .contact-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-group:last-child {
+        grid-column: span 2;
+    }
+
+    #getInTouch {
+        flex-direction: column;
+    }
+}
+
+/* Laptop (901px to 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+    #getInTouch {
+        flex-wrap: nowrap;
+    }
+
+    .map-wrapper {
+        flex: 1.5;
+    }
+
+    .contact-info-container {
+        flex: 1;
+    }
+}
+
+/* Large Screens (1201px and up) */
+@media (min-width: 1201px) {
+    #inquaries {
+        flex-direction: row;
+    }
+
+    #getInTouch {
+        flex: 1;
+    }
+
+    #contact {
+        flex: 1;
+    }
+
+    .contact-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-group:last-child {
+        grid-column: span 2;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-width: 900px) and (orientation: landscape) {
+    .map-container {
+        padding-bottom: 75%; /* Adjust aspect ratio for landscape */
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group:last-child {
+        grid-column: span 1;
+    }
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     .contact-info-container {
