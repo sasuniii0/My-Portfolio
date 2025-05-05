@@ -317,7 +317,7 @@ h3{
 }
 
 .animated-div {
-    width: 80px;
+    width: 100px;
     height: 3px;
     background-color: #3498db;
     margin: 0 auto 2rem;
@@ -393,7 +393,7 @@ h3{
 
 #rightSide {
     flex: 1;
-    min-width: 300px;
+    min-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
