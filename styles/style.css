@@ -13,83 +13,117 @@ body{
     flex-direction: column;
     position: relative;
 }
-header{
-    position: fixed;  /* Fixes the header */
-    top: 0;           /* Positions it at the top */
-    left: 0;
-    width: 100%;      /* Ensures it stretches across the screen */
-    background: #000000; /* Ensures it's visible */
-    z-index: 100;    /* Ensures it stays on top of other elements */
+header {
+    background-color: #090909;
+    color: #ecf0f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px 10px 10px;
-    color: white;
-}
-#name{
-    margin-left: 30px;
-    font-size: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#fullPg>div{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+#name {
+    color: #3498db;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
 }
-#nav{
+
+.navigation {
     display: flex;
-    gap: 30px;
-    right: 30px;
-    top: 0;
-    position: absolute;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    justify-content: space-between;
-    margin: 20px 10px 10px 10px;
+    gap: 2rem;
 }
-#iconMenu{
-    display: none;
-}
-nav a{
+
+.nav_item {
+    color: #ecf0f1;
     text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-    display: inline-block; /* Ensures the link takes up space for the underline */
+    font-weight: 500;
     position: relative;
-    padding-bottom: 5px;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
 }
-nav a::after {
+
+.nav_item::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0; /* Initially, no underline */
-    height: 2px; /* Thickness of the underline */
-    background-color: #ffffff; /* Underline color */
-    transition: width 0.3s ease; /* Smooth transition for width */
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s;
 }
 
-/* On Hover, Show the Underline Smoothly */
-nav a:hover::after {
-    width: 100%; /* The underline expands to full width */
+.nav_item:hover {
+    color: #3498db;
 }
 
+.nav_item:hover::after {
+    width: 100%;
+}
 
-#iconMenu{
+#iconMenu {
     display: none;
+    cursor: pointer;
+}
+
+#iconMenu img {
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+}
+
+#iconMenu:hover img {
+    transform: scale(1.1);
+    filter: brightness(0) invert(0.8) sepia(1) hue-rotate(180deg) saturate(5);
+}
+
+/* Active State */
+.nav_item.active {
+    color: #3498db;
+}
+
+.nav_item.active::after {
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .navigation {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #2c3e50;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        transition: left 0.3s;
+    }
+
+    .navigation.active {
+        left: 0;
+    }
+
+    #iconMenu {
+        display: block;
+    }
 }
 /* Home Main Section */
-#home {
+/*#home {
     display: flex;
-    justify-content: space-between; /* Left, Center, Right */
+    justify-content: space-between; !* Left, Center, Right *!
     align-items: center;
-    min-height: 80vh; /* Full height of the screen */
+    min-height: 80vh; !* Full height of the screen *!
     padding: 10px 30px 30px 30px;
 }
-/* Left Section */
+!* Left Section *!
 #left {
     display: flex;
     gap: 10px;
@@ -104,14 +138,14 @@ nav a:hover::after {
     align-items: center;
     font-size: 20px;
 }
-/* Line Separator */
+!* Line Separator *!
 .line {
     width: 80%;
     height: 2px;
     background-color: white;
 }
 
-/* Icons */
+!* Icons *!
 #icons {
     display: flex;
     gap: 15px;
@@ -128,7 +162,7 @@ nav a:hover::after {
 
 }
 
-/* Middle Section (Image) */
+!* Middle Section (Image) *!
 #middle {
     display: flex;
     justify-content: center;
@@ -146,7 +180,7 @@ nav a:hover::after {
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
     cursor: pointer;
 
-    /* Animation */
+    !* Animation *!
     animation: float 3s ease;
 }
 #middle img:hover {
@@ -157,7 +191,7 @@ nav a:hover::after {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
-/* Right Section (Name) */
+!* Right Section (Name) *!
 #right {
     display: flex;
     flex-direction: column;
@@ -187,6 +221,133 @@ nav a:hover::after {
 #line2:hover {
     background-color: darkblue;
 
+}*/
+
+#home {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 70vh;
+}
+
+/* Left Side Styles */
+#left {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#left > div:first-child {
+    color: #bdc3c7;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+}
+
+#icons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+#icons img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s;
+}
+
+#icons a:hover img {
+    transform: translateY(-3px);
+    filter: brightness(0) invert(0.8) sepia(1) hue-rotate(180deg) saturate(5);
+}
+
+/* Middle Styles */
+#middle {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#middle img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #3498db;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#middle img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3);
+}
+
+/* Right Side Styles */
+#right {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: right;
+}
+
+#right > div:first-child {
+    color: #3498db;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#right > div:last-child {
+    color: #bdc3c7;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #right {
+        text-align: center;
+        align-items: center;
+    }
+
+    #icons {
+        justify-content: center;
+    }
+}
+
+/* Animation for the hero image */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#middle img {
+    animation: float 4s ease-in-out infinite;
 }
 /*#aboutMe{
     display: flex;
