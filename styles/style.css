@@ -417,188 +417,139 @@ h3{
         transform: translateX(-30%); /* Moves half way, ensuring smooth looping */
     }
 }
-#project>div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers items */
-    padding: 10px 30px 30px 30px;
-    gap: 40px;
-}
-
-#project>p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-}
-
-.content-track {
-    height: 170px;
-    width: 300px; /* Adjust as needed */
-    background-color: #0A0F3C; /* Dark blue */
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
-}
-.content-track:hover {
-    transform: scale(1.05); /* Slightly enlarge the card */
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay effect */
-    opacity: 0.3; /* Reduce visibility */
-    border: white 1px solid;
-}
-.content-track:hover.github-button {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1);
-    pointer-events: auto; /* Allows clicking */
-}
-.project-track>div>div>p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: inherit;
-    top: 170px;
-    right:0;
-    font-weight: 300;
-    font-size: 20px;
-}
-.content-view-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    background: linear-gradient(45deg, #0b0b40, #010205); /* Coral Red to Soft Golden */
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-}
-.content-view-button:hover{
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-#project>p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-}
-#project>div>a{
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-}
-#under-project{
-    position: relative;
-}
-#project>div>a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
-}
-
-#project > div > a:hover::after {
-    width: 100%; /* Expands the underline */
-}
-
-
-
-.section-header {
+.projects-header {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.section-title {
-    font-size: 2rem;
-    color: #ffffff;
+.projects-header h3 {
+    color: #3498db;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
-.title-underline {
+.header-underline {
     width: 80px;
-    height: 4px;
-    background: #3498db;
+    height: 3px;
+    background-color: #3498db;
     margin: 0 auto;
 }
 
-.assignments-grid {
+.project-track {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.assignment-card {
-    background: rgba(255, 255, 255, 0.1);
+.card {
+    background-color: #34495e;
     border-radius: 8px;
     padding: 1.5rem;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.assignment-card:hover {
+.card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.assignment-title {
-    color: #3498db;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.doc-buttons {
+.content-track {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.doc-btn {
-    background: #3498db;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.doc-btn:hover {
-    background: #2980b9;
-}
-
-.github-link {
-    display: inline-flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    color: #ecf0f1;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    gap: 1rem;
 }
 
-.github-link:hover {
-    color: #3498db;
-}
-
-.github-icon {
-    width: 24px;
-    height: 24px;
+.project-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
     filter: brightness(0) invert(1);
 }
 
+.project-description {
+    color: #ecf0f1;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.github-button {
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+}
+
+.content-view-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content-view-button:hover {
+    background-color: #2980b9;
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.content-view-button:hover .arrow-icon {
+    transform: translateX(3px);
+}
+
+.explore-more {
+    text-align: center;
+    color: #bdc3c7;
+    margin: 2rem auto 1rem;
+    max-width: 800px;
+    font-size: 1.1rem;
+}
+
+.project-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-link {
+    transition: transform 0.3s;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s;
+}
+
+.social-link:hover .social-icon {
+    filter: brightness(0) invert(0.8) sepia(1) hue-rotate(180deg) saturate(5);
+}
 /*
 #assignment{
     display: flex;
@@ -669,9 +620,9 @@ h3{
 }
 
 #assignment > div > a:hover::after {
-    width: 100%; !* Expands the underline *!
-}*/
-/*#galleryImg {
+    width: 100%;
+}
+!*#galleryImg {
     position: relative;
     margin: 0 auto;
     display: grid;
@@ -681,7 +632,7 @@ h3{
     width: 90vw;
     height: 90vh;
     overflow: hidden!important;
-}*/
+}*!*/
 #galleryImg {
     position: relative;
     margin: 0 auto;
