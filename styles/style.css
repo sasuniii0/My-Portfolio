@@ -91,7 +91,7 @@ header {
     width: 100%;
 }
 
-/* Responsive Adjustments */
+/*!* Responsive Adjustments *!
 @media (max-width: 900px) {
     .navigation {
         position: fixed;
@@ -114,7 +114,7 @@ header {
     #iconMenu {
         display: block;
     }
-}
+}*/
 /* Home Main Section */
 /*#home {
     display: flex;
@@ -320,6 +320,7 @@ header {
 }
 
 /* Responsive Adjustments */
+/*
 @media (max-width: 900px) {
     #home {
         flex-direction: column;
@@ -335,6 +336,7 @@ header {
         justify-content: center;
     }
 }
+*/
 
 /* Animation for the hero image */
 @keyframes float {
@@ -1030,7 +1032,7 @@ h3{
     filter: brightness(0) invert(1);
 }
 
-/* Responsive Adjustments */
+/*!* Responsive Adjustments *!
 @media (max-width: 768px) {
     .assignments-grid {
         grid-template-columns: 1fr;
@@ -1043,7 +1045,7 @@ h3{
     .assignment-card {
         padding: 1.2rem;
     }
-}
+}*/
 /*
 #assignment{
     display: flex;
@@ -1360,7 +1362,7 @@ h3{
 }
 
 .map-container {
-    width: 100%;
+    width: 80%;
     border-radius: 12px;
     overflow: hidden;
     transition: filter 0.5s ease;
@@ -1660,6 +1662,7 @@ body.dark-mode #darkModeToggle {
     font-size: 0.9rem;
 }
 
+
 /* Media Queries */
 @media (max-width: 768px) {
     .footer-content {
@@ -1940,6 +1943,70 @@ body.dark-mode #darkModeToggle {
         font-size: 18px;
     }
 }
+
+/* Projects Section - Responsive Media Queries */
+
+/* Base Styles (Mobile First) */
+.projects-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.project-track {
+    display: grid;
+    grid-template-columns: 1fr; /* Default single column */
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* Small Mobile (up to 360px) */
+@media (max-width: 360px) {
+    .card {
+        padding: 1rem;
+    }
+    .content-view-button {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile (361px to 600px) */
+@media (min-width: 361px) and (max-width: 600px) {
+    .project-track {
+        gap: 1.8rem;
+    }
+}
+
+
+/* Standard Laptop (1025px to 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .project-track {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.2rem;
+    }
+}
+
+/* Large Desktop (1281px to 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .project-track {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+/* Extra Large Screens (1441px and up) */
+@media (min-width: 1441px) {
+    .project-track {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+    .projects-container {
+        padding: 0 2rem;
+    }
+}
+
+
 /*Project responsive*/
 @media all and (max-width: 1000px){
     #project>p{
