@@ -388,6 +388,8 @@ h3{
 }
 #h3pro{
     color: #3498DBFF;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -756,6 +758,11 @@ h3{
     height: 90vh;
     overflow: hidden!important;
 }*!*/
+.gallery-header>h3 {
+    color: #3498db;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
 #galleryImg {
     position: relative;
     margin: 0 auto;
