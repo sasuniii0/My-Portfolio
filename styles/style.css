@@ -1471,6 +1471,67 @@ header {
 }
 
 
+
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out;
+    max-width: 400px;
+    transition: opacity 0.3s;
+}
+
+.custom-alert.success {
+    background: #4CAF50;
+    border-left: 5px solid #2E7D32;
+}
+
+.custom-alert.error {
+    background: #F44336;
+    border-left: 5px solid #C62828;
+}
+
+.custom-alert button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+/* Spinner for button */
+.spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none !important;
+}
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* Media Queries */

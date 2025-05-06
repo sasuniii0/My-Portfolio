@@ -709,37 +709,57 @@
             <section id="contact">
                 <div id="ContactRight">
                     <!--form-->
-                    <form id="contactForm" class="contact-form">
+                    <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Required Fields -->
+                        <input type="hidden" name="access_key" value="ece9ddf5-1f42-4720-b07e-2f211bf60247">
+
+                        <!-- Your Form Structure -->
                         <div class="form-group">
-                            <label for = "first-name">First Name</label><br>
-                            <input type = "text"
-                                   id = "first-name"
-                                   placeholder=" Enter First Name" required>
+                            <label for="first-name">First Name</label><br>
+                            <input type="text"
+                                   id="first-name"
+                                   name="first_name"
+                                   placeholder="Enter First Name"
+                                   required>
                         </div>
+
                         <div class="form-group">
-                            <label for = "last-name">Last Name</label><br>
-                            <input type = "text"
-                                   id = "last-name"
-                                   placeholder=" Enter Last Name" required>
+                            <label for="last-name">Last Name</label><br>
+                            <input type="text"
+                                   id="last-name"
+                                   name="last_name"
+                                   placeholder="Enter Last Name"
+                                   required>
                         </div>
+
                         <div class="form-group">
-                            <label for = "subject">Email</label><br>
-                            <input type = "text"
-                                   id = "subject"
-                                   placeholder=" Enter Email" required>
+                            <label for="subject">Subject</label><br>
+                            <input type="text"
+                                   id="subject"
+                                   name="subject"
+                            placeholder="Enter Subject"
+                            required>
                         </div>
+
                         <div class="form-group">
                             <label for="message">Message</label><br>
                             <textarea id="message"
-                                      placeholder="Enter Message" required></textarea>
+                                      name="message"
+                                      placeholder="Enter your message"
+                                      required></textarea>
                         </div>
-                        <button type = "submit" class="submit-btn">
+
+                        <!-- Hidden email field (if you still want email notifications) -->
+                        <input type="hidden" name="email" value="sasuniwijerathne@gmail.com">
+
+                        <button type="submit" class="submit-btn">
                             <span>Submit</span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
                             </svg>
                         </button>
                     </form>
+
                 </div>
                 <button id="backToTop" class="back-to-top" aria-label="Back to top">
                     <img src="assets/icons/top.png" alt="Back to top" width="40" loading="lazy">
@@ -893,6 +913,59 @@
             });
         });
     });
+
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalBtnHTML = submitBtn.innerHTML;
+
+        // Show loading state
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending</span><span class="spinner"></span>';
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(this)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('Your message has been sent successfully!', 'success');
+                    this.reset(); // Reset form
+                } else {
+                    showAlert('Error: ' + data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showAlert('Network error. Please try again.', 'error');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHTML;
+            });
+    });
+
+    function showAlert(message, type) {
+        // Remove existing alerts first
+        const existingAlert = document.querySelector('.custom-alert');
+        if (existingAlert) existingAlert.remove();
+
+        const alertBox = document.createElement('div');
+        alertBox.className = `custom-alert ${type}`;
+        alertBox.innerHTML = `
+                <span>${message}</span>
+                <button onclick="this.parentElement.remove()">×</button>
+            `;
+
+        document.body.appendChild(alertBox);
+
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+            alertBox.style.opacity = '0';
+            setTimeout(() => alertBox.remove(), 300);
+        }, 5000);
+    }
 
 </script>
 </body>
