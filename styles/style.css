@@ -359,7 +359,120 @@ header {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/*-------------------------------------------------------------*/
 
+/* Services Section Styles */
+#services {
+    background-color: #f8f9fa; /* Light background */
+    padding: 4rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    color: #2c3e50; /* Dark blue */
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.header-underline {
+    width: 80px;
+    height: 4px;
+    background-color: #3498db; /* Accent blue */
+    margin: 0 auto;
+}
+
+#servicePg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#servicePg > div {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e9ecef;
+}
+
+#servicePg > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #3498db;
+}
+
+#servicePg h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin: 1rem 0 0.5rem;
+}
+
+#servicePg p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+#servicePg img {
+    filter: hue-rotate(180deg) brightness(0.9);
+    transition: transform 0.3s ease;
+}
+
+#servicePg > div:hover img {
+    transform: scale(1.1);
+}
+
+#servicePg button {
+    align-self: flex-start;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+#servicePg button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(41, 128, 185, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    #servicePg {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    #services {
+        padding: 3rem 1rem;
+    }
+
+    #servicePg > div {
+        padding: 1.5rem;
+    }
+}
 /*-------------------------------education section-------------------------*/
 #education h3 {
     color: #3498db;
