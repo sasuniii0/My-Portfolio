@@ -436,11 +436,20 @@ h3{
     background-color: white;
     transition: background-color 0.3s ease;
 }*/
+/* Base styles for all devices */
+.main {
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
 
-#aboutMe h3 {
-    color: #3498db;
-    font-size: 1.8rem;
+.section-header {
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: #3498db;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -476,13 +485,15 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 #leftSide {
     flex: 1;
-    min-width: 300px;
+    min-width: 250px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,6 +501,9 @@ h3{
 }
 
 #leftImg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 8px;
     border: 3px solid #3498db;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -505,11 +519,12 @@ h3{
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #iconLeft img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     filter: brightness(0) invert(1);
     transition: all 0.3s;
 }
@@ -521,7 +536,8 @@ h3{
 
 #rightSide {
     flex: 1;
-    min-width: 500px;
+    min-width: 250px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -552,6 +568,7 @@ h3{
     transition: all 0.3s;
     align-self: flex-start;
     margin: 1rem 0;
+    width: auto;
 }
 
 .resume-btn:hover {
@@ -559,6 +576,7 @@ h3{
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 /*#educationPg{
     display: flex;
     flex-wrap: wrap;
@@ -2280,6 +2298,9 @@ body.dark-mode #darkModeToggle {
         flex-direction: column-reverse !important;
         padding: 10px !important;
         gap: 10px !important;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
     #leftSide {
         width: 100% !important;
@@ -2355,6 +2376,14 @@ body.dark-mode #darkModeToggle {
     }
     #nav{
         display: none;
+    }
+    #aboutPg{
+        flex-direction: column-reverse !important;
+        padding: 10px !important;
+        gap: 10px !important;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 }
 
