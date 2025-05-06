@@ -17,7 +17,7 @@ header {
     background-color: #090909;
     color: #ecf0f1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 1rem 2rem;
+    padding: 1rem ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@ header {
     color: #3498db;
     font-size: 1.8rem;
     font-weight: 600;
-    margin: 0;
+    margin-right: auto; /* Pushes navigation to the right */
 }
 
 .navigation {
@@ -68,12 +68,25 @@ header {
 }
 
 #iconMenu {
-    display: none;
+    display: flex;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.navigation{
+    display: flex;
+    gap: 2rem;
 }
 
 #iconMenu img {
     filter: brightness(0) invert(1);
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    justify-content: flex-end;
+    align-content: flex-end;
     transition: transform 0.3s;
 }
 
