@@ -74,6 +74,8 @@ header {
     align-items: center;
     padding: 0.5rem;
     border-radius: 50%;
+    order: -1; /* This forces it to the leftmost position */
+
 }
 .navigation{
     display: flex;
