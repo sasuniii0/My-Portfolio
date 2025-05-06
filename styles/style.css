@@ -199,7 +199,6 @@ header {
     background-color: darkblue;
 
 }*/
-
 #home {
     max-width: 1200px;
     margin: 0 auto;
@@ -209,7 +208,9 @@ header {
     align-items: center;
     gap: 2rem;
     width: 100%;
-    height: 70vh;
+    min-height: 70vh; /* Changed from height to min-height */
+    padding: 2rem 1rem; /* Added padding */
+    box-sizing: border-box;
 }
 
 /* Left Side Styles */
@@ -265,9 +266,11 @@ header {
 #middle img {
     max-width: 100%;
     height: auto;
+    max-height: 400px; /* Added max-height */
     border-radius: 8px;
     border: 3px solid #3498db;
     transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: contain; /* Ensures image maintains aspect ratio */
 }
 
 #middle img:hover {
@@ -290,6 +293,7 @@ header {
     color: #3498db;
     font-size: 3rem;
     font-weight: 600;
+    line-height: 1.2; /* Added line-height */
 }
 
 #right > div:last-child {
@@ -297,7 +301,6 @@ header {
     font-size: 1.1rem;
     line-height: 1.6;
 }
-
 
 /* Animation for the hero image */
 @keyframes float {
@@ -312,6 +315,7 @@ header {
 #middle img {
     animation: float 4s ease-in-out infinite;
 }
+
 /*#aboutMe{
     display: flex;
     justify-content: space-between; !* Left, Center, Right *!
@@ -1627,9 +1631,54 @@ body.dark-mode #darkModeToggle {
     height: 50px;
 }
 
+
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* Media Queries */
+
+/* For tablets (768px and up) */
+@media (min-width: 768px) {
+    .back-to-top {
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+/* For small laptops (1024px and up) */
+@media (min-width: 1024px) {
+    .back-to-top {
+        width: 55px;
+        height: 55px;
+        bottom: 40px;
+        right: 40px;
+    }
+}
+
+/* For desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .back-to-top {
+        width: 60px;
+        height: 60px;
+        bottom: 50px;
+        right: 50px;
+    }
+}
+
+/* For very small screens (phones, 480px and below) */
+@media (max-width: 480px) {
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .back-to-top img {
+        width: 50%;
+    }
+}
 @media (max-width: 768px) {
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
@@ -1708,6 +1757,11 @@ body.dark-mode #darkModeToggle {
     .map-wrapper{
         width: 70%;
         height: 300px;
+    }
+    .contact-form{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 @media all and (max-width: 420px) {
@@ -2220,6 +2274,7 @@ body.dark-mode #darkModeToggle {
     }
 }
 
+/*-----------------------------------------------*/
 @media all and (max-width: 1000px){
     #aboutPg{
         flex-direction: column-reverse !important;
