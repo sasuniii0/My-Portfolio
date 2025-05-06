@@ -686,11 +686,10 @@
                                    placeholder=" Enter Email" required>
                         </div>
                         <div class="form-group">
-                            <label for = "message">Message</label><br>
-                            <input type = "text"
-                                   id = "message"
-                                   placeholder=" Enter Message" required>
-                        </div><br>
+                            <label for="message">Message</label><br>
+                            <textarea id="message"
+                                      placeholder="Enter Message" required></textarea>
+                        </div>
                         <button type = "submit" class="submit-btn">
                             <span>Submit</span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -778,7 +777,7 @@
 
 <script>
 
-   /* /!* JavaScript to Show/Hide Button *!/
+    /* JavaScript to Show/Hide Button */
     window.addEventListener('scroll', function() {
         const backToTopBtn = document.querySelector('.back-to-top');
         if (window.pageYOffset > 300) {
@@ -795,7 +794,7 @@
             top: 0,
             behavior: 'smooth'
         });
-    });*/
+    });
 
     document.addEventListener('DOMContentLoaded', () => {
         const darkModeToggle = document.getElementById('darkModeToggle');
