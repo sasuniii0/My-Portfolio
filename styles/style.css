@@ -361,106 +361,133 @@ header {
 }
 /*-------------------------------------------------------------*/
 
-/* Services Section Styles */
+/* Services Section - Matching Your Footer Style */
 #services {
-    background-color: #f8f9fa; /* Light background */
-    padding: 4rem 1rem;
+    background-color: #2c3e50; /* Same dark blue as footer */
+    color: #ecf0f1; /* Light text */
+    padding: 5rem 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .section-title {
-    color: #2c3e50; /* Dark blue */
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
+    color: #3498db; /* Accent blue */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
 }
 
 .header-underline {
-    width: 80px;
+    width: 100px;
     height: 4px;
-    background-color: #3498db; /* Accent blue */
+    background-color: #3498db;
     margin: 0 auto;
+    border-radius: 2px;
 }
 
+/* Services Grid - Enhanced Card Design */
 #servicePg {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 #servicePg > div {
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    padding: 2.5rem;
+    border: 1px solid rgba(52, 152, 219, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: flex;
     flex-direction: column;
-    border: 1px solid #e9ecef;
+    height: 80%;
 }
 
 #servicePg > div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border-color: #3498db;
+    background: rgba(52, 152, 219, 0.1);
 }
 
-#servicePg h3 {
-    color: #2c3e50;
-    font-size: 1.4rem;
-    margin: 1rem 0 0.5rem;
-}
-
-#servicePg p {
-    color: #7f8c8d;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    flex-grow: 1;
-}
-
+/* Service Content Styling */
 #servicePg img {
-    filter: hue-rotate(180deg) brightness(0.9);
-    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    filter: brightness(0) invert(1);
+    transition: transform 0.4s ease;
 }
 
 #servicePg > div:hover img {
-    transform: scale(1.1);
+    transform: rotate(-5deg) scale(1.1);
 }
 
+#servicePg h3 {
+    color: #3498db;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+#servicePg p {
+    color: #bdc3c7;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    flex-grow: 1;
+}
+
+/* Button Styling - Matching Footer */
 #servicePg button {
     align-self: flex-start;
     background-color: #3498db;
     color: white;
     border: none;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 2rem;
     border-radius: 6px;
-    cursor: pointer;
     font-weight: 500;
+    cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-top: auto;
 }
 
 #servicePg button:hover {
     background-color: #2980b9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(41, 128, 185, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4);
 }
 
-/* Responsive Adjustments */
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #servicePg {
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .section-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     #servicePg {
         grid-template-columns: 1fr;
-        max-width: 500px;
+        max-width: 600px;
+    }
+
+    #servicePg > div {
+        padding: 2rem;
     }
 }
 
@@ -469,8 +496,12 @@ header {
         padding: 3rem 1rem;
     }
 
+    .section-title {
+        font-size: 1.8rem;
+    }
+
     #servicePg > div {
-        padding: 1.5rem;
+        padding: 1.8rem;
     }
 }
 /*-------------------------------education section-------------------------*/
