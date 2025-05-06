@@ -699,11 +699,103 @@ header {
     gap: 1rem;
 }
 
-.project-icon {
+/*.project-icon {
     width: 60px;
     height: 60px;
     object-fit: contain;
     filter: brightness(0) invert(1);
+}*/
+
+.card {
+    width: 220px; /* Fixed width */
+    height: 350px; /* Fixed height */
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background: #2c3c53;
+    display: flex;
+    flex-direction: column;
+    margin: 10px; /* Spacing between cards */
+}
+
+/* Image Container - Fixed Aspect Ratio */
+.project-image-container {
+    width: 100%;
+    height: 180px; /* Fixed image height */
+    overflow: hidden;
+}
+
+/* Images - Uniform Cover */
+.project-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill container */
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Content Area - Fixed Height */
+.content-track {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    flex-grow: 1;
+}
+
+/* GitHub Button - Consistent Across Cards */
+.github-button {
+    text-decoration: none;
+}
+
+.content-view-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: #f8f9fa;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content-view-button:hover {
+    background: #3498db;
+    color: white;
+}
+
+/* Icons - Uniform Size */
+.button-icon, .arrow-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Container for all cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Remove any inline image sizing */
+.project-hero-image[width],
+.project-hero-image[height] {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .project-description {
