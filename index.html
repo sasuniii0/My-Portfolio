@@ -57,9 +57,8 @@
     </nav>
 
     <!--icon menu-->
-    <div id="iconMenu">
-        <img src="assets/icons/menu.png" alt="menu" width="50">
-    </div>
+    <div id="iconMenu">☰</div>
+
 </header>
 
 <!--------------------------Home------------------------------------->
@@ -870,6 +869,24 @@
 
 <script>
 
+    document.addEventListener('DOMContentLoaded', function() {
+        const iconMenu = document.getElementById('iconMenu');
+        const nav = document.getElementById('nav');
+
+        // Toggle navigation menu
+        iconMenu.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a nav item
+        const navItems = document.querySelectorAll('.nav_item');
+        navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                nav.classList.remove('active');
+            });
+        });
+    });
+
     /* JavaScript to Show/Hide Button */
     window.addEventListener('scroll', function() {
         const backToTopBtn = document.querySelector('.back-to-top');
@@ -917,11 +934,17 @@
 
         // Responsive height adjustment
         function adjustMapHeight() {
-            mapIframe.style.height = `${window.innerHeight * 0.6}px`;
+            const mapIframe = document.getElementById('mapIframe'); // Get the element
+            if (mapIframe) { // Check if it exists
+                mapIframe.style.height = `${window.innerHeight * 0.6}px`;
+            }
         }
-        window.addEventListener('resize', adjustMapHeight);
-        adjustMapHeight();
+        document.addEventListener('DOMContentLoaded', function() {
+            adjustMapHeight(); // Initial adjustment
+            window.addEventListener('resize', adjustMapHeight);
+        });
     });
+
 
     document.addEventListener('DOMContentLoaded', () => {
         // Back to Top Button

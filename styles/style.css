@@ -26,6 +26,9 @@ header {
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+#nav{
+    display: flex;
+}
 
 #name {
     color: #3498db;
@@ -74,6 +77,7 @@ header {
     align-items: center;
     padding: 0.5rem;
     border-radius: 50%;
+
 }
 .navigation{
     display: flex;
@@ -2524,5 +2528,27 @@ header {
 
     #right {
         text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav {
+        display: none;
+        position: absolute;
+        top: 60px; /* below icon */
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+
+    #iconMenu {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
     }
 }
