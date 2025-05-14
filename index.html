@@ -57,9 +57,8 @@
     </nav>
 
     <!--icon menu-->
-    <div id="iconMenu">
-        <img src="assets/icons/menu.png" >
-    </div>
+    <img src="assets/icons/menu.png" id="iconMenu" alt="menu" width="30px">
+
 
 </header>
 
@@ -871,23 +870,40 @@
 
 <script>
 
+    // Wait for DOM to load
     document.addEventListener('DOMContentLoaded', function() {
-        const iconMenu = document.getElementById('iconMenu');
+        console.log('DOM loaded - running menu script');
+
+        // Get elements
+        const menuIcon = document.getElementById('iconMenu');
         const nav = document.getElementById('nav');
 
-        // Toggle navigation menu
-        iconMenu.addEventListener('click', function() {
+        // Debugging checks
+        if (!menuIcon) console.error('Menu icon not found!');
+        if (!nav) console.error('Navigation menu not found!');
+
+        // Click handler for menu icon
+        menuIcon.addEventListener('click', function(e) {
+            console.log('Menu icon clicked');
+            e.stopPropagation(); // Prevent immediate closing
             nav.classList.toggle('active');
+            console.log('Menu state:', nav.classList.contains('active') ? 'visible' : 'hidden');
         });
 
-        // Close menu when clicking on a nav item
-        const navItems = document.querySelectorAll('.nav_item');
-        navItems.forEach(item => {
-            item.addEventListener('click', function() {
+        // Close menu when clicking anywhere else
+        document.addEventListener('click', function() {
+            if (nav.classList.contains('active')) {
+                console.log('Closing menu by clicking outside');
                 nav.classList.remove('active');
-            });
+            }
+        });
+
+        // Prevent menu from closing when clicking inside it
+        nav.addEventListener('click', function(e) {
+            e.stopPropagation();
         });
     });
+
 
     /* JavaScript to Show/Hide Button */
     window.addEventListener('scroll', function() {
