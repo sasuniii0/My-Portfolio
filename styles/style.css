@@ -70,7 +70,6 @@ header {
     width: 100%;
 }
 
-
 /* Mobile Menu - Compact Version */
 .mobile-menu {
     display: none;
@@ -240,6 +239,8 @@ header {
     min-width: 250px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
     position: relative;
 }
 
