@@ -248,7 +248,7 @@ header {
     max-width: 100%;
     height: auto;
     max-height: 400px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 3px solid #3498db;
     transition: transform 0.3s, box-shadow 0.3s;
     object-fit: contain; /* Ensures image maintains aspect ratio */
