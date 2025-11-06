@@ -6,428 +6,1152 @@
 
 <!-----------------------------Meta data---------------------------------------->
 
-    <link rel = "icon" type = "image/ico" href = "assets/icon.png">
+
+    <!--icon-->
+    <link rel = "icon" type = "image/ico" href = "assets/images/icon.png">
+
+    <!--css-->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!--normalize-->
+    <link rel="stylesheet" href="lib/normalize.css">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css">
+
+    <!--icon-->
+    <link rel="icon" type="image/png" href="assets/images/favicon.jpg" />
+
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
 
     <meta name="keywords" content="HTML, CSS, JavaScript, Java, C, C++, C#, Python, React, Angular, Vue.js, Node.js, Frontend Developer, Backend Developer, Full-Stack Developer, Web Development, Software Engineer, UI/UX Design, Mobile App Development, Sasuni Wijerathne, Portfolio, Programmer, Software Developer, Cloud Computing, AI, Machine Learning, Cybersecurity, Open Source, Git, GitHub, Data Science, API Development, Database Management, SQL, NoSQL, AWS, DevOps, Freelancer, IT Professional">
     <meta name="description" content="Welcome to my portfolio! I'm Sasuni Wijerathne, a passionate developer from Sri Lanka specializing in modern web and software development.">
     <meta name="author" content="Sasuni Wijerathne">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            background-color: grey;
-        }
-    </style>
 </head>
 <body>
 
 <!--------------------------Navigation------------------------------------->
 <main id = "fullPg">
-<header>
-    <!-- icon -->
-    <div>
-        <h2>Sasuni</h2>
-    </div>
+    <header>
+        <!-- logo/name -->
+        <div>
+            <h2 id="name">Sasuni</h2>
+        </div>
 
-    <!-- navigation -->
-    <nav class = "navigation">
-        <a href = "#" class = "nav_item">Home</a>
-        <a href = "#" class = "nav_item">About</a>
-        <a href = "#" class = "nav_item">Skills</a>
-        <a href = "#" class = "nav_item">Projects</a>
-        <a href = "#" class = "nav_item">Gallery</a>
-        <a href = "#" class = "nav_item">Achievements</a>
-        <a href = "#" class = "nav_item">Contact Me</a>
-    </nav>
-</header>
+        <!-- desktop navigation (visible on larger screens) -->
+        <nav class="navigation" id="desktopNav">
+            <a href="#fullPg" class="nav_item">Home</a>
+            <a href="#aboutMe" class="nav_item">About</a>
+            <a href="#services" class="nav_item">Services</a>
+            <a href="#skills" class="nav_item">Skills</a>
+            <a href="#projects" class="nav_item">Projects</a>
+            <a href="#gallery" class="nav_item">Gallery</a>
+            <a href="#achievements" class="nav_item">Achievements</a>
+            <a href="#contact me" class="nav_item">Contact Me</a>
+        </nav>
 
+        <!-- mobile menu toggle and dropdown (hidden on desktop) -->
+        <div class="mobile-menu">
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <img src="assets/icons/menu.png" alt="Menu" class="menu-icon" width="30">
+                <img src="assets/icons/close.png" alt="Close" class="close-icon" width="30">
+            </button>
+
+            <div class="dropdown-menu" id="mobileNav">
+                <nav class="navigation">
+                    <a href="#fullPg" class="nav_item">Home</a>
+                    <a href="#aboutMe" class="nav_item">About</a>
+                    <a href="#services" class="nav_item">Services</a>
+                    <a href="#skills" class="nav_item">Skills</a>
+                    <a href="#projects" class="nav_item">Projects</a>
+                    <a href="#gallery" class="nav_item">Gallery</a>
+                    <a href="#achievements" class="nav_item">Achievements</a>
+                    <a href="#contact me" class="nav_item">Contact Me</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 <!--------------------------Home------------------------------------->
 <div id="homeMain"></div>
 <main>
 
-    <section>
+    <div class="div" ></div>
+
+    <section id="home">
         <!--left side-->
-        <div>
-            Developer| UI/UX Designer| Programmer| Software Engineer| Content & Web Creater
-            <div></div>
-            <div>
-                <img src="assets/git%20(2).png" alt="git" >
-                <img src="assets/medium%20(2).png" alt="medium">
-                <img src="assets/instagram.png" alt="instagram">
-                <img src="assets/fb.png" alt="fb">
-                <img src="assets/linkedin%20(2).png" alt="linkedin">
+        <div id="left">
+            <div>Developer| UI/UX Designer|Software Engineer| Content & Web Creater</div>
+            <div id="line1" class="line"></div>
+            <div id="icons">
+                <a href="https://github.com/sasuniii0">
+                    <img src="assets/icons/git%20(2).png" alt="git" >
+                </a>
+                <a href="https://medium.com/@sasuniwijerathne">
+                    <img src="assets/icons/medium%20(2).png" alt="medium">
+                </a>
+                <a href="https://www.instagram.com/sasunyyy.y?igsh=ZTNwanBtMWdwdzJk&utm_source=qr">
+                    <img src="assets/icons/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/share/15x6JjsExn/?mibextid=wwXIfr">
+                    <img src="assets/icons/fb.png" alt="fb">
+                </a>
+                <a href="https://www.linkedin.com/in/sasuni-wijerathne-a3b517311/">
+                    <img src="assets/icons/linkedin%20(2).png" alt="linkedin">
+                </a>
             </div>
         </div>
 
         <!--middle-->
-        <div>
+        <div id="middle">
             <div></div>
-            <img src="assets/hero.png" alt="hero" width="300">
+            <img src="assets/images/picHome.jpeg" alt="hero" width="300">
         </div>
 
         <!--right side-->
-        <div>
-            <h1>Sasuni Wijerathne</h1>
-            <div></div>
+        <div id="right">
+            <div>Sasuni Wijerathne</div>
+            <div class="line" id="line2"></div>
+            <div>Driven, passionate, and focused—creating with purpose in everything I do</div>
         </div>
     </section>
 </main>
 
 <!-----------------------------About me---------------------------------------------->
-<div  id = "aboutMe"></div>
-    <main>
-    <h3><b>About me</b></h3>
-        <div></div>
-    <section>
+<div  id = "aboutMe" class="heading-div"></div>
+    <main class = "main">
+        <div class="section-header">
+            <h2 class="section-title"><b>About me</b></h2>
+            <div class="animated-div"></div>
+        </div>
+    <section id="aboutPg">
 
         <!--left-->
-        <img src="assets/aboutmeImg.png" alt="aboutMe" width="300">
-        <div></div>
-        <div>
-            <img src="assets/git%20(2).png" alt="git" >
-            <img src="assets/medium%20(2).png" alt="medium">
-            <img src="assets/instagram.png" alt="instagram">
-            <img src="assets/fb.png" alt="fb">
-            <img src="assets/linkedin%20(2).png" alt="linkedin">
+        <div id="leftSide">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <img src="assets/images/presentAboutMe.jpg" alt="aboutMe" width="300" id="leftImg">
+            </div>
+            <div></div>
+            <div id="iconLeft">
+                <a href="https://github.com/sasuniii0">
+                    <img src="assets/icons/git%20(2).png" alt="git" >
+                </a>
+                <a href="https://medium.com/@sasuniwijerathne">
+                    <img src="assets/icons/medium%20(2).png" alt="medium">
+                </a>
+                <a href="https://www.instagram.com/sasunyyy.y?igsh=ZTNwanBtMWdwdzJk&utm_source=qr">
+                    <img src="assets/icons/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/share/15x6JjsExn/?mibextid=wwXIfr">
+                    <img src="assets/icons/fb.png" alt="fb">
+                </a>
+                <a href="https://www.linkedin.com/in/sasuni-wijerathne-a3b517311/">
+                    <img src="assets/icons/linkedin%20(2).png" alt="linkedin">
+                </a>
+            </div>
         </div>
 
         <!--right side-->
-        <div>
-            <div></div>
+        <div id="rightSide">
+            <p>So, who am I?</p>
+            <div class="lineAbtMe"></div>
             <div>
-                <p>Name: Sasuni Jinethma Wijerathne</p>
-                <p>Gender: Female</p>
-                <p>Email: sasuniwijerathne@gmail.com</p>
-                <p>Age: 21</p>
-                <p>From: Sri Lanka</p>
+                <p>I’m Sasuni Jinethma Wijerathne, a 21-year-old software developer, UI/UX designer, and content creator from Sri Lanka, pursuing my BSc (Hons) in Computer Science at IJSE. Passionate about tech, design, and digital storytelling, I strive to create innovative, user-centric experiences that inspire and engage.</p>
             </div>
-            <div></div>
-            <div>
-                <p>I’m a 21-year-old software developer, social content creator, and UI/UX designer, currently pursuing my BS (Hons) in Computer Science at IJSE. I’m passionate about technology, creative design, and building engaging content. My future passion is to merge these skills, creating innovative software solutions and captivating content that inspires others to explore the world of tech and design.</p>
-            </div>
+            <a href ="lib/CV%20-%20Sasuni%20%20Wijerathne%20(1).pdf" download="">
+                <button class="resume-btn">
+                    Download Resume
+                </button>
+            </a>
+            <div class="lineAbtMe"></div>
         </div>
     </section>
 </main>
 
+<!-----------------------------------Services-------------------------------------------->
+    <div id="services" ></div>
+    <main class="main"></main>
+    <div class="section-header">
+        <h2 class="section-title"><b>My Services</b></h2>
+        <div class="header-underline"></div>
+    </div>
+    <div data-aos="fade-up"
+         data-aos-duration="3000">
+        <section id="servicePg">
+            <div class="service-card">
+                <div>
+                    <img src="assets/icons/backend.png" width="40" height="40" alt="backend">
+                    <h3>Backend Development</h3>
+                    <p>Engineer bulletproof backend systems with blazing-fast APIs, ironclad security, and military-grade scalability.</p>
+                </div>
+                <button><a href="#contact me">Contact Me</a></button>
+            </div>
+            <div class="service-card">
+                <div>
+                    <img src="assets/icons/frontend.png" width="40" height="40" alt="frontend">
+                    <h3>Frontend Development</h3>
+                    <p>Craft jaw-dropping UIs with buttery-smooth animations, pixel-perfect responsiveness, and addictive user experiences.</p>
+                </div>
+                <button><a href="#contact me">Contact Me</a></button>
+            </div>
+            <div class="service-card">
+                <div>
+                    <img src="assets/icons/freelancing.png" width="40" height="40" alt="freelancing">
+                    <h3> Premium Freelancing</h3>
+                    <p>Turn-key web solutions with white-glove service – from emergency bug fixes to enterprise-grade builds.</p>
+                </div>
+                <button><a href="#contact me">Contact Me</a></button>
+            </div>
+            <div class="service-card">
+                <div>
+                    <img src="assets/icons/paint.png" width="40" height="40" alt="uiux">
+                    <h3>UI/UX Alchemy</h3>
+                    <p>Transform clunky interfaces into gold-standard designs that skyrocket engagement and crush conversion goals.</p>
+                </div>
+                <button><a href="#contact me">Contact Me</a></button>
+            </div>
+        </section>
+    </div>
+
+
 <!-----------------------------Education---------------------------------------------->
-    <div  id = "education"></div>
-    <main>
-        <h3><b>Education</b></h3>
-        <div></div>
-        <section>
+    <div  id = "education" ></div>
+    <main class = "main">
+        <div class="section-header">
+            <h2 class="section-title"><b>My Journey</b></h2>
+            <div class="header-underline"></div>
+        </div>
+        <section id="educationPg">
+
 
             <!--Gothami-->
             <div>
-                <img src="assets/gothami.png" alt="gothami" width="100">
-                <p>Successfully completed my O/Ls at Gothami Balika Vidyalaya with 8 A's and 1 B!</p>
+                <div>
+                    <img src="assets/icons/icons8-graduation-cap-90.png" alt="date" width="48">
+                    <p>2015-2020</p>
+                </div>
+                <div id="eduLine1"></div>
+                <p class="heading">Secondary qualification</p>
+                <p>Successfully completed my General Certificate of Education Ordinary Level (GCE O/L) at Gothami Balika Vidyalaya, achieving 8 A's and 1 B!</p>
             </div>
 
             <!--st.pauls-->
             <div>
-                <img src="assets/st.pauls.png" alt="st.pauls" width="100">
-                <p>Completed my A/Ls in the Maths and IT stream at St. Paul’s Girls’ School, Milagiriya!</p>
+                <div>
+                    <img src="assets/icons/icons8-graduation-cap-90.png" alt="date" width="48">
+                    <p>2020-2023</p>
+                </div>
+                <div id="eduLine2"></div>
+                <p class="heading">Advanced Level qualification</p>
+                <p>Successfully completed my Advanced Level (GCE A/L) in the Mathematics and IT stream at St. Paul’s Girls’ School, Milagiriya!</p>
             </div>
+
             <!--British council-->
             <div>
-                <img src="assets/britishCouncil.jpg" alt="britishCouncil" width="100">
+                <div>
+                    <img src="assets/icons/icons8-graduation-cap-90.png" alt="date" width="48">
+                    <p>2024</p>
+                </div>
+                <div id="eduLine3"></div>
+                <p class="heading">English MyClass program</p>
                 <p>Successfully completed the English MyClass program at the British Council!</p>
             </div>
 
             <!--IBMS-->
             <div>
-                <img src="assets/imbs.png" alt="imbs" width="100">
-                <p>Completed my Diploma in Information Technology at IMBS Green Campus!</p>
+                <div>
+                    <img src="assets/icons/icons8-graduation-cap-90.png" alt="date" width="48">
+                    <p>2022</p>
+                </div>
+                <div id="eduLine4"></div>
+                <p class="heading">Diploma in IT</p>
+                <p>Successfully completed the Foundation in Information Technology program at IBMS Campus, building a strong foundation in IT concepts and technical skills!</p>
             </div>
 
             <!--IJSE-->
             <div>
-                <img src="assets/ijse.png" alt="ijse" width="100">
-                <p>  Currently pursuing the Higher National Diploma in Software Engineering (GDSE) at IJSE!</p>
+                <div>
+                    <img src="assets/icons/icons8-graduation-cap-90.png" alt="date" width="48">
+                    <p>2024-Present</p>
+                </div>
+                <div id="eduLine5"></div>
+                <p class="heading">Undergraduate Studies</p>
+                <p>Currently pursuing the Graduate Diploma in Software Engineering (GDSE) at IJSE, gaining expertise in full-stack development, software architecture, and emerging technologies.</p>
             </div>
         </section>
     </main>
 
 <!-----------------------------Skills---------------------------------------------->
-    <div id = "skills"></div>
-    <main>
-        <h3><b>Skills</b></h3>
-        <div></div>
-        <section>
+    <div id = "skills" class="heading-div"></div>
+    <main class = "main" >
+        <div class="section-header">
+            <h2 class="section-title"><b>Skills</b></h2>
+            <div class="header-underline"></div>
+        </div>
+        <section id="skillsPg">
             <div>
                 <!--skills and technologies-->
-                <div></div>
-                <p>My Skills & Technologies</p>
-                <div></div>
-                <img src="assets/html.png" alt="html" width="50">
-                <img src="assets/css.png" alt="css" width="50">
-                <img src="assets/js.png" alt="js" width="50">
-                <img src="assets/java.png" alt="java" width="50">
-                <img src="assets/spring.png" alt="spring" width="50">
-                <img src="assets/python.png" alt="python" width="50">
-                <img src="assets/mysql.png" alt="mysql" width="50">
-                <img src="assets/figma.png" alt="figma" width="50">
-                <img src="assets/php.png" alt="php" width="50">
-                <img src="assets/canva%20(2).png" alt="canva" width="50">
-                <img src="assets/hibernate.png" alt="hibernate" width="50">
-                <img src="assets/react.png" alt="react" width="50">
-                <img src="assets/angular%20(2).png" alt="angular" width="50">
-                <img src="assets/notion%20(2).png" alt="notion" width="50">
-                <img src="assets/intelij.png" alt="intelij" width="50">
-                <img src="assets/c%20(2).png" alt="c" width="50">
-                <img src="assets/xml.png" alt="xml" width="50">
+                <!--<div id="skillTop">
+                    <div class="skillLine"></div>
+                    <p>My Skills & Technologies</p>
+                    <div class="skillLine"></div>
+                </div>-->
+                <div class="icon-track">
+                    <img src="assets/icons/html.png" alt="html" width="50">
+                    <img src="assets/icons/css.png" alt="css" width="50">
+                    <img src="assets/icons/js.png" alt="js" width="50">
+                    <img src="assets/icons/java.png" alt="java" width="50">
+                    <img src="assets/icons/spring.png" alt="spring" width="50">
+                    <img src="assets/icons/python.png" alt="python" width="50">
+                    <img src="assets/icons/mysql.png" alt="mysql" width="50">
+                    <img src="assets/icons/boostrap.png" alt="boostrap" width="50">
+                    <img src="assets/icons/git%20(2).png" alt="git" width="50">
+                    <img src="assets/icons/office.png" alt="office" width="50">
+                    <img src="assets/icons/figma.png" alt="figma" width="50">
+                    <img src="assets/icons/php.png" alt="php" width="50">
+                    <img src="assets/icons/canva%20(2).png" alt="canva" width="50">
+                    <img src="assets/icons/hibernate.png" alt="hibernate" width="50">
+                    <img src="assets/icons/react.png" alt="react" width="50">
+                    <img src="assets/icons/angular%20(2).png" alt="angular" width="50">
+                    <img src="assets/icons/notion%20(2).png" alt="notion" width="50">
+                    <img src="assets/icons/intelij.png" alt="intelij" width="50">
+                    <img src="assets/icons/c%20(2).png" alt="c" width="50">
+                    <img src="assets/icons/xml.png" alt="xml" width="50">
+
+                    <img src="assets/icons/html.png" alt="html" width="50">
+                    <img src="assets/icons/css.png" alt="css" width="50">
+                    <img src="assets/icons/js.png" alt="js" width="50">
+                    <img src="assets/icons/java.png" alt="java" width="50">
+                    <img src="assets/icons/spring.png" alt="spring" width="50">
+                    <img src="assets/icons/python.png" alt="python" width="50">
+                    <img src="assets/icons/mysql.png" alt="mysql" width="50">
+                    <img src="assets/icons/boostrap.png" alt="boostrap" width="50">
+                    <img src="assets/icons/git%20(2).png" alt="git" width="50">
+                    <img src="assets/icons/office.png" alt="office" width="50">
+                    <img src="assets/icons/figma.png" alt="figma" width="50">
+                    <img src="assets/icons/php.png" alt="php" width="50">
+                    <img src="assets/icons/canva%20(2).png" alt="canva" width="50">
+                    <img src="assets/icons/hibernate.png" alt="hibernate" width="50">
+                    <img src="assets/icons/react.png" alt="react" width="50">
+                    <img src="assets/icons/angular%20(2).png" alt="angular" width="50">
+                    <img src="assets/icons/notion%20(2).png" alt="notion" width="50">
+                    <img src="assets/icons/intelij.png" alt="intelij" width="50">
+                    <img src="assets/icons/c%20(2).png" alt="c" width="50">
+                    <img src="assets/icons/xml.png" alt="xml" width="50">
+                </div>
             </div>
         </section>
     </main>
 
 <!-----------------------------Projects---------------------------------------------->
-    <div  id = "projects"></div>
-    <main>
-        <h3><b>Projects</b></h3><div></div>
-        <section>
-            <div>
+    <div id="projects" class="heading-div"></div>
+    <main class="main">
+        <div class="section-header">
+            <h2 class="section-title"><b>Projects</b></h2>
+            <div class="header-underline"></div>
+        </div>
+        <section id="project" class="projects-container">
+            <div class="project-track">
 
-                <!--paws and claws care-->
-                <div>
-                    <img src="assets/git%20(2).png" alt="git" >
-                    <img src="assets/project.png" alt="project">
-                    <p>MVC Architecture Stand-alone pet care management system</p>
+                <div data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <!-- Paws and Claws Care -->
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="assets/images/mvc.png" alt="MVC Architecture" class="project-hero-image" width="220px" >
+                        </div>
+                        <div class="content-track">
+                            <p class="project-description">Paws and Claws Care | JavaFX Powerhouse: MVC Veterinary Suite</p>
+                        </div>
+                        <a href="https://github.com/sasuniii0/PawsAndClawsCareMVC" class="github-button">
+                            <button class="content-view-button">
+                                <img src="assets/icons/git%20(2).png" alt="git" class="button-icon">
+                                <p>View on GitHub</p>
+                                <img src="assets/images/arrow.png" alt="arrow" class="arrow-icon">
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
-                <!--tic-tac-toe-->
-                <div>
-                    <img src="assets/git%20(2).png" alt="git" >
-                    <img src="assets/tictactoe.png" alt="tictactoe">
-                    <p>AI-Powered Tic-Tac-Toe Championship Edition</p>
+                <div data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <!-- Portfolio -->
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="assets/images/portfolio.png" alt="MVC Architecture" class="project-hero-image" width="220px" >
+                        </div>
+                        <div class="content-track">
+                            <p class="project-description">Portfolio WebSite | Code Canvas: My Dev Story</p>
+                        </div>
+                        <a href="https://github.com/sasuniii0/My-Portfolio" class="github-button">
+                            <button class="content-view-button">
+                                <img src="assets/icons/git%20(2).png" alt="git" class="button-icon">
+                                <p>View on GitHub</p>
+                                <img src="assets/images/arrow.png" alt="arrow" class="arrow-icon">
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
-                <!--portfolio-->
-                <div>
-                    <img src="assets/git%20(2).png" alt="git" >
-                    <img src="assets/portfolio.png" alt="portfolio">
-                    <p>My Digital Showcase</p>
+
+
+                <div data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <!-- Portfolio -->
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="assets/images/spa.png" alt="spa" class="project-hero-image" width="220px" >
+                        </div>
+                        <div class="content-track">
+                            <p class="project-description">SPA Developer | Bootstrap Crafted</p>
+                        </div>
+                        <a href="https://github.com/sasuniii0/POS-SPA" class="github-button">
+                            <button class="content-view-button">
+                                <img src="assets/icons/git%20(2).png" alt="git" class="button-icon">
+                                <p>View on GitHub</p>
+                                <img src="assets/images/arrow.png" alt="arrow" class="arrow-icon">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="assets/images/pos.png" alt="MVC Architecture" class="project-hero-image" width="220px" >
+                        </div>
+                        <div class="content-track">
+                            <p class="project-description">Bootstrap Cashflow Commander</p>
+                        </div>
+                        <a href="https://github.com/sasuniii0/POS-System" class="github-button">
+                            <button class="content-view-button">
+                                <img src="assets/icons/git%20(2).png" alt="git" class="button-icon">
+                                <p>View on GitHub</p>
+                                <img src="assets/images/arrow.png" alt="arrow" class="arrow-icon">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="assets/images/layered.png" alt="MVC Architecture" class="project-hero-image" width="220px" >
+                        </div>
+                        <div class="content-track">
+                            <p class="project-description">Paws & Claws Care Layered Architecture | Vet Platform</p>
+                        </div>
+                        <a href="https://github.com/sasuniii0/Paws-ClawsLayered" class="github-button">
+                            <button class="content-view-button">
+                                <img src="assets/icons/git%20(2).png" alt="git" class="button-icon">
+                                <p>View on GitHub</p>
+                                <img src="assets/images/arrow.png" alt="arrow" class="arrow-icon">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <!-- Tic-Tac-Toe -->
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="assets/images/oop.png" alt="MVC Architecture" class="project-hero-image" width="220px" >
+                        </div>
+                        <div class="content-track">
+                            <p class="project-description">Tic-Tac-Toe | Minimax Mindbreaker: Undefeatable AI</p>
+                        </div>
+                        <a href="https://github.com/sasuniii0/TicTacToe" class="github-button">
+                            <button class="content-view-button">
+                                <img src="assets/icons/git%20(2).png" alt="git" class="button-icon">
+                                <p>View on GitHub</p>
+                                <img src="assets/images/arrow.png" alt="arrow" class="arrow-icon">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="assets/images/orm.png" alt="MVC Architecture" class="project-hero-image" width="220px" >
+                        </div>
+                        <div class="content-track">
+                            <p class="project-description">Serenity Therapy Center | ORM Therapy Orchestrator </p>
+                        </div>
+                        <a href="https://github.com/sasuniii0/Serenity-Mental-Health-Therapy-Center-ORM" class="github-button">
+                            <button class="content-view-button">
+                                <img src="assets/icons/git%20(2).png" alt="git" class="button-icon">
+                                <p>View on GitHub</p>
+                                <img src="assets/images/arrow.png" alt="arrow" class="arrow-icon">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="assets/images/cht.png" alt="MVC Architecture" class="project-hero-image" width="220px" >
+                        </div>
+                        <div class="content-track">
+                            <p class="project-description">Real-Time Chat Application | Socket Rocket: Instant Messenger </p>
+                        </div>
+                        <a href="https://github.com/sasuniii0?tab=repositories" class="github-button">
+                            <button class="content-view-button">
+                                <img src="assets/icons/git%20(2).png" alt="git" class="button-icon">
+                                <p>View on GitHub</p>
+                                <img src="assets/images/arrow.png" alt="arrow" class="arrow-icon">
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!--explore more-->
-            <p>Explore more of my projects and creations! Visit my LinkedIn or GitHub for details.</p>
-            <div>
-                <img src="assets/git%20(2).png" alt="git" >
-                <img src="assets/linkedin%20(2).png" alt="linkedin">
+            <!-- Explore more -->
+            <p class="explore-more">Explore more of my projects and creations! Visit my LinkedIn or GitHub for details.</p>
+            <div class="project-social-links">
+                <a href="https://github.com/sasuniii0" class="social-link">
+                    <img src="assets/icons/git%20(2).png" alt="git" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/sasuni-wijerathne-a3b517311/" class="social-link">
+                    <img src="assets/icons/linkedin%20(2).png" alt="linkedin" class="social-icon">
+                </a>
             </div>
         </section>
     </main>
 
-<!-----------------------------Assignments---------------------------------------------->
-    <main id ="assignments">
-        <h3><b>Assignments</b></h3><div></div>
-        <section>
-            <div>
-                <p>Assignment 1</p>
-                <div>
-                    <p>Document 1</p>
-                    <p>Document 2</p>
-                    <p>Document 3</p>
+
+    <!-----------------------------Assignments---------------------------------------------->
+    <main id="assignments" class="main">
+        <div class="heading-div"></div>
+        <div class="section-header">
+            <h2 class="section-title">Assignments</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <section class="assignments-grid">
+            <!-- Assignment 1 -->
+
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <div class="assignment-card">
+                    <h3 class="assignment-title">Assignment 1</h3>
+                    <div class="doc-buttons">
+                        <button class="doc-btn">Document 1</button>
+                        <button class="doc-btn">Document 2</button>
+                        <button class="doc-btn">Document 3</button>
+                        <button class="doc-btn">Document 4</button>
+                    </div>
+                    <a href="https://github.com/sasuniii0/My-Portfolio/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <img src="assets/icons/git%20(2).png" alt="View on GitHub" loading="lazy" class="github-icon">
+                        <span>View on GitHub</span>
+                    </a>
                 </div>
-                <img src="assets/git%20(2).png" alt="git" >
             </div>
-            <div>
-                <p>Assignment 2</p>
-                <div>
-                    <p>Document 1</p>
-                    <p>Document 2</p>
-                    <p>Document 3</p>
+
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <!-- Assignment 2 -->
+                <div class="assignment-card">
+                    <h3 class="assignment-title">Assignment 2</h3>
+                    <div class="doc-buttons">
+                        <button class="doc-btn">Document 1</button>
+                        <button class="doc-btn">Document 2</button>
+                        <button class="doc-btn">Document 3</button>
+                        <button class="doc-btn">Document 4</button>
+                    </div>
+                    <a href="https://github.com/sasuniii0/My-Portfolio/tree/main" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <img src="assets/icons/git%20(2).png" alt="View on GitHub" loading="lazy" class="github-icon">
+                        <span>View on GitHub</span>
+                    </a>
                 </div>
-                <img src="assets/git%20(2).png" alt="git" >
             </div>
-            <div>
-                <p>Assignment 3</p>
-                <div>
-                    <p>Document 1</p>
-                    <p>Document 2</p>
-                    <p>Document 3</p>
+
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <!-- Assignment 3 -->
+                <div class="assignment-card">
+                    <h3 class="assignment-title">Assignment 3</h3>
+                    <div class="doc-buttons">
+                        <button class="doc-btn">Document 1</button>
+                        <button class="doc-btn">Document 2</button>
+                        <button class="doc-btn">Document 3</button>
+                        <button class="doc-btn">Document 4</button>
+                    </div>
+                    <a href="https://github.com/sasuniii0/Assignment-3" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <img src="assets/icons/git%20(2).png" alt="View on GitHub" loading="lazy" class="github-icon">
+                        <span>View on GitHub</span>
+                    </a>
                 </div>
-                <img src="assets/git%20(2).png" alt="git" >
             </div>
-            <div>
-                <p>Assignment 4</p>
-                <div>
-                    <p>Document 1</p>
-                    <p>Document 2</p>
-                    <p>Document 3</p>
+
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <!-- Assignment 4 -->
+                <div class="assignment-card">
+                    <h3 class="assignment-title">Assignment 4</h3>
+                    <div class="doc-buttons">
+                        <button class="doc-btn">Document 1</button>
+                        <button class="doc-btn">Document 2</button>
+                        <button class="doc-btn">Document 3</button>
+                        <button class="doc-btn">Document 4</button>
+                    </div>
+                    <a href="https://github.com/sasuniii0/Assignment-4-CSS" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <img src="assets/icons/git%20(2).png" alt="View on GitHub" loading="lazy" class="github-icon">
+                        <span>View on GitHub</span>
+                    </a>
                 </div>
-                <img src="assets/git%20(2).png" alt="git" >
             </div>
-            <div>
-                <p>Assignment 5</p>
-                <div>
-                    <p>Document 1</p>
-                    <p>Document 2</p>
-                    <p>Document 3</p>
+
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <!-- Assignment 5 -->
+                <div class="assignment-card">
+                    <h3 class="assignment-title">Assignment 5</h3>
+                    <div class="doc-buttons">
+                        <button class="doc-btn">Document 1</button>
+                        <button class="doc-btn">Document 2</button>
+                        <button class="doc-btn">Document 3</button>
+                        <button class="doc-btn">Document 4</button>
+                    </div>
+                    <a href="https://github.com/sasuniii0/My-Portfolio" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <img src="assets/icons/git%20(2).png" alt="View on GitHub" loading="lazy" class="github-icon">
+                        <span>View on GitHub</span>
+                    </a>
                 </div>
-                <img src="assets/git%20(2).png" alt="git" >
             </div>
-            <div>
-                <p>Assignment 6</p>
-                <div>
-                    <p>Document 1</p>
-                    <p>Document 2</p>
-                    <p>Document 3</p>
+
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <!-- Assignment 6 -->
+                <div class="assignment-card">
+                    <h3 class="assignment-title">Assignment 6</h3>
+                    <div class="doc-buttons">
+                        <button class="doc-btn">Document 1</button>
+                        <button class="doc-btn">Document 2</button>
+                        <button class="doc-btn">Document 3</button>
+                        <button class="doc-btn">Document 4</button>
+                    </div>
+                    <a href="https://github.com/sasuniii0/POS-System/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <img src="assets/icons/git%20(2).png" alt="View on GitHub" loading="lazy" class="github-icon">
+                        <span>View on GitHub</span>
+                    </a>
                 </div>
-                <img src="assets/git%20(2).png" alt="git" >
+            </div>
+
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <!-- Assignment 7 -->
+                <div class="assignment-card">
+                    <h3 class="assignment-title">Assignment 7</h3>
+                    <div class="doc-buttons">
+                        <button class="doc-btn">Document 1</button>
+                        <button class="doc-btn">Document 2</button>
+                        <button class="doc-btn">Document 3</button>
+                        <button class="doc-btn">Document 4</button>
+                    </div>
+                    <a href="https://github.com/sasuniii0/POS-SPA" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <img src="assets/icons/git%20(2).png" alt="View on GitHub" loading="lazy" class="github-icon">
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <!-- Assignment 8 -->
+                <div class="assignment-card">
+                    <h3 class="assignment-title">Assignment 8</h3>
+                    <div class="doc-buttons">
+                        <button class="doc-btn">Document 1</button>
+                        <button class="doc-btn">Document 2</button>
+                        <button class="doc-btn">Document 3</button>
+                        <button class="doc-btn">Document 4</button>
+                    </div>
+                    <a href="https://github.com/sasuniii0/Assignment8-Dom-Manipulation" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <img src="assets/icons/git%20(2).png" alt="View on GitHub" loading="lazy" class="github-icon">
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <!-- Assignment 9 -->
+                <div class="assignment-card">
+                    <h3 class="assignment-title">Assignment 9</h3>
+                    <div class="doc-buttons">
+                        <button class="doc-btn">Document 1</button>
+                        <button class="doc-btn">Document 2</button>
+                        <button class="doc-btn">Document 3</button>
+                        <button class="doc-btn">Document 4</button>
+                    </div>
+                    <a href="https://github.com/sasuniii0/Assignment9" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <img src="assets/icons/git%20(2).png" alt="View on GitHub" loading="lazy" class="github-icon">
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
+
+    <div data-aos="fade-up"
+         data-aos-duration="3000">
+    </div>
 
 <!-----------------------------Gallery---------------------------------------------->
-    <div  id = "gallery"></div>
-    <main>
-        <h3><b>Gallery</b></h3><div></div>
-        <section>
-            <div>
-                <img src="assets/car.jpg" alt="car" width="300">
-                <img src="assets/presentation.jpg" alt="presentation" width="300">
-                <img src="assets/beruwala.jpg" alt="Beruwala" width="300">
-                <img src="assets/24birthday.jpg" alt="24birthday" width="300">
-                <img src="assets/beach%202.jpg" alt="beach" width="300">
-                <img src="assets/cafe.jpg" alt="cafe" width="300">
-                <img src="assets/birthday.jpg" alt="birthday" width="300">
-                <img src="assets/ogf.jpg" alt="ogf" width="300">
-                <img src="assets/ogf2.jpg" alt="ogf2" width="300">
+    <div id="gallery" class="heading-div"></div>
+    <main class="main">
+        <div class="section-header">
+            <h2 class="section-title"><b>Gallery</b></h2>
+            <div class="header-underline"></div>
+        </div>
+        <section id="gallerySection" class="gallery-container">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <section id="galleryImg">
+                    <div><img src="assets/images/car.jpg" alt="car"></div>
+                    <div><img src="assets/images/barista.jpg" alt="presentation"></div>
+                    <div><img src="assets/images/beruwala.jpg" alt="Beruwala"></div>
+                    <div><img src="assets/images/24birthday.jpg" alt="24birthday"></div>
+                    <div><img src="assets/images/jan1.jpg" alt="beach"></div>
+                    <div><img src="assets/images/cafe.jpg" alt="cafe"></div>
+                    <div><img src="assets/images/birthday.jpg" alt="birthday"></div>
+                    <div><img src="assets/images/ogf.jpg" alt="ogf"></div>
+                    <div id="hidegal"><img src="assets/images/ogf2.jpg" alt="ogf2"></div>
+                    <div id="hide"><img src="assets/images/31st.jpg" alt="31st"></div>
+                </section>
             </div>
-            <p>Discover more of my world through photos and stories on Instagram and Facebook!</p>
-            <div>
-                <img src="assets/instagram.png" alt="instagram">
-                <img src="assets/fb.png" alt="fb">
+
+            <p class="gallery-caption">Discover more of my world through photos and stories on Instagram and Facebook!</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/sasunyyy.y?igsh=ZTNwanBtMWdwdzJk&utm_source=qr">
+                    <img src="assets/icons/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/share/15x6JjsExn/?mibextid=wwXIfr">
+                    <img src="assets/icons/fb.png" alt="fb">
+                </a>
             </div>
         </section>
     </main>
 
 <!-----------------------------Achievements---------------------------------------------->
-    <div id = "achievements"></div>
-    <main>
-        <h3><b>Achievements</b></h3><div></div>
-        <section>
-            <div>
-                <img src="assets/mehackathon.jpg" alt="mehackathon" width="300">
-                <p>A proud moment capturing the essence of my journey in tech and innovation.</p>
+    <div id="achievements" class="heading-div"></div>
+    <main class="main">
+        <div class="section-header">
+            <h2 class="section-title"><b>Achievements</b></h2>
+            <div class="header-underline"></div>
+        </div>
+        <section id="achievementsPg" class="achievements-grid">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <div class="achievement-card">
+                    <img src="assets/images/mehackathon.jpg" alt="mehackathon" class="achievement-img">
+                    <div class="achievement-details">
+                        <p>A proud moment capturing the essence of my journey in tech and innovation.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="assets/hackathon.jpg" alt="hackathon" width="300">
-                <p>Team 'Codehub' celebrating our victory in the GENESYS24 Hackathon.</p>
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <div class="achievement-card">
+                    <img src="assets/images/hackathon.jpg" alt="hackathon" class="achievement-img">
+                    <div class="achievement-details">
+                        <p>Team 'Codehub' celebrating our victory in the GENESYS24 Hackathon.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="assets/awardCe.jpg" alt="awardCe" width="300">
-                <p>Winning the GENESYS24 Hackathon</p>
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <div class="achievement-card">
+                    <img src="assets/images/awardCe.jpg" alt="awardCe" class="achievement-img">
+                    <div class="achievement-details">
+                        <p>Winning the GENESYS24 Hackathon</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
 <!-----------------------------Contact me---------------------------------------------->
-    <div id = "contact me"></div>
-    <main >
-        <h3><b>Get in Touch</b></h3><div></div>
-        <section>
-            <!--mapping-->
-            <iframe>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63389.39085189601!2d79.89510952116818!3d6.789688842355045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24f91d281cc5d%3A0xea4b2fcd3ce0e74e!2sPiliyandala!5e0!3m2!1sen!2slk!4v1738842717564!5m2!1sen!2slk"
-                        width="600"
-                        height="450"
-                        style="border:0;" allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </iframe>
-            <!--gmail and location-->
-            <div>
-                <img src="assets/gmail.png" alt="gmail" width="50">
-                <p>mailto: sasuniwijerathne@gmail</p>
-            </div>
-            <div>
-                <img src="assets/location.png" alt="location" width="50">
-                <p>Sri Lanka, Western Province,Piliyandala</p>
-            </div>
-            <!--form-->
-            <form>
-                <div>
-                    <label for = "first-name">First Name</label><br>
-                    <input type = "text"
-                           id = "first-name"
-                           placeholder=" Enter First Name">
-                </div>
-                <div>
-                    <label for = "last-name">Last Name</label><br>
-                    <input type = "text"
-                           id = "last-name"
-                           placeholder=" Enter Last Name">
-                </div>
-                <div>
-                    <label for = "subject">Email</label><br>
-                    <input type = "text"
-                           id = "subject"
-                           placeholder=" Enter Email">
-                </div>
-                <div>
-                    <label for = "message">Message</label><br>
-                    <input type = "text"
-                           id = "message"
-                           placeholder=" Enter Message">
-                </div><br>
-                <button type = "submit">Submit</button>
-            </form>
-            <div>
-                <p>Back to top</p>
-                <img src="assets/top.png" alt="top" width="50">
-            </div>
-        </section>
+    <div id = "contact me" ></div>
+    <div class="heading-div" id="contact-me-head"></div>
+    <main class = "main">
+        <div class="section-header">
+            <div class="heading-div"></div>
+
+            <h2 class="section-title"><b>Get in Touch</b></h2>
+            <div class="header-underline"></div>
+        </div>
+        <div data-aos="fade-up"
+             data-aos-duration="3000">
+            <section id="inquaries">
+                <section id="getInTouch">
+                    <!--mapping-->
+                    <div class="map-wrapper">
+                        <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
+                        <div class="map-container">
+                            <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63389.39085189601!2d79.89510952116818!3d6.789688842355045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24f91d281cc5d%3A0xea4b2fcd3ce0e74e!2sPiliyandala!5e0!3m2!1sen!2slk!4v1738842717564!5m2!1sen!2slk"
+                                    width="600"
+                                    height="450"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!--gmail and location-->
+
+                    <div id="GmailAndLocation" class="contact-info-container">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="assets/icons/gmail.png" alt="Email icon" width="40" height="40" loading="lazy">
+                            </div>
+                            <div class="contact-details">
+                                <a href="mailto:sasuniwijerathne@gmail.com" class="contact-link">
+                                    sasuniwijerathne@gmail.com
+                                </a>
+                                <p class="contact-label">Email Address</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="assets/icons/location.png" alt="Location icon" width="40" height="40" loading="lazy">
+                            </div>
+                            <div class="contact-details">
+                                <address class="contact-text">
+                                    Piliyandala, Western Province,<br>
+                                    Sri Lanka
+                                </address>
+                                <p class="contact-label">Our Location</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact">
+                    <div id="ContactRight">
+                        <!--form-->
+                        <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Web3Forms Required Fields -->
+                            <input type="hidden" name="access_key" value="ece9ddf5-1f42-4720-b07e-2f211bf60247">
+
+                            <!-- Your Form Structure -->
+                            <div class="form-group">
+                                <label for="first-name">First Name</label><br>
+                                <input type="text"
+                                       id="first-name"
+                                       name="first_name"
+                                       placeholder="Enter First Name"
+                                       required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label><br>
+                                <input type="text"
+                                       id="last-name"
+                                       name="last_name"
+                                       placeholder="Enter Last Name"
+                                       required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label><br>
+                                <input type="text"
+                                       id="subject"
+                                       name="subject"
+                                       placeholder="Enter Subject"
+                                       required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label><br>
+                                <textarea id="message"
+                                          name="message"
+                                          placeholder="Enter your message"
+                                          required></textarea>
+                            </div>
+
+                            <!-- Hidden email field (if you still want email notifications) -->
+                            <input type="hidden" name="email" value="sasuniwijerathne@gmail.com">
+
+                            <button type="submit" class="submit-btn">
+                                <span>Submit</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </form>
+
+                    </div>
+                    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+                        <img src="assets/icons/top.png" alt="Back to top" width="40" loading="lazy">
+                    </button>
+                </section>
+            </section>
+        </div>
     </main>
 </main>
 
 <!-----------------------------footer---------------------------------------------->
-    <main id = "footerPg">
-        <footer>
-            <div>
-                <nav class = "navigation">
-                    <!--navigation-->
-                    <div>
-                        <a href = "#" class = "nav_item">Home</a><br>
-                        <a href = "#" class = "nav_item">About</a><br>
-                        <a href = "#" class = "nav_item">Skills</a><br>
-                        <a href = "#" class = "nav_item">Projects</a><br>
+<main id="footerPg">
+    <footer class="footer-container">
+        <div class="footer-content">
+            <!-- Navigation Links -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Quick Links</h3>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <a href="#home" class="nav-item">Home</a>
+                        <a href="#aboutMe" class="nav-item">About</a>
+                        <a href="#services" class="nav-item">Services</a>
+                        <a href="#skills" class="nav-item">Skills</a>
+                        <a href="#projects" class="nav-item">Projects</a>
                     </div>
-                    <div>
-                        <a href = "#" class = "nav_item">Gallery</a><br>
-                        <a href = "#" class = "nav_item">Achievements</a><br>
-                        <a href = "#" class = "nav_item">Contact Me</a><br>
+                    <div class="link-column">
+                        <a href="#gallery" class="nav-item">Gallery</a>
+                        <a href="#achievements" class="nav-item">Achievements</a>
+                        <a href="#contact me" class="nav-item">Contact Me</a>
                     </div>
-
-                    <!--search box-->
-                    <div class="search-box">
-                        <input type="text" placeholder="Search...">
-                        <button type="submit">🔍</button>
-                    </div>
-
-                    <!--about me-->
-                    <div>
-                        <div></div>
-                        <p>About me</p>
-                        <p>Lorem ipsum 4dolor sit amet, consectetur adipisicing elit. A dolores fugit incidunt velit vitae. Esse impedit iusto mollitia possimus tempora? Dicta eaque earum odio quam veritatis. Est laudantium officia perferendis?</p>
-                    </div>
-
-                    <!--social media-->
-                    <div>
-                        <img src="assets/git%20(2).png" alt="git" >
-                        <img src="assets/medium%20(2).png" alt="medium">
-                        <img src="assets/instagram.png" alt="instagram">
-                        <img src="assets/fb.png" alt="fb">
-                        <img src="assets/linkedin%20(2).png" alt="linkedin">
-                    </div>
-
-                    <!--footer-->
-                    <div>
-                        <p>© [2025] All rights reserved | Crafted with care by Sasuni | Powered by innovation</p>
-                    </div>
-                </nav>
+                </div>
             </div>
-        </footer>
-    </main>
+
+            <!-- Search Box -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Search</h3>
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." aria-label="Search">
+                    <button type="submit" aria-label="Search button">🔍</button>
+                </div>
+            </div>
+
+            <!-- About Me -->
+            <div class="footer-section">
+                <h3 class="footer-heading">About Me</h3>
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores fugit incidunt velit vitae. Esse impedit iusto mollitia possimus tempora?</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/sasuniii0" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/git%20(2).png" alt="GitHub" loading="lazy">
+                    </a>
+                    <a href="https://medium.com/@sasuniwijerathne" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/medium%20(2).png" alt="Medium" loading="lazy">
+                    </a>
+                    <a href="https://www.instagram.com/sasunyyy.y" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/instagram.png" alt="Instagram" loading="lazy">
+                    </a>
+                    <a href="https://www.facebook.com/share/15x6JjsExn/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/fb.png" alt="Facebook" loading="lazy">
+                    </a>
+                    <a href="https://www.linkedin.com/in/sasuni-wijerathne-a3b517311/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/linkedin%20(2).png" alt="LinkedIn" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2025 All rights reserved | Crafted with care by Sasuni | Powered by innovation</p>
+        </div>
+    </footer>
+</main>
+<script rel="stylesheet" src="lib/fontawesome/js/all.js"></script>
+<script src="lib/jquery-3.7.1.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+
+    AOS.init();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        const menuIcon = document.querySelector('.menu-icon');
+        const closeIcon = document.querySelector('.close-icon');
+
+        menuToggle.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+            // Toggle menu visibility
+            mobileNav.classList.toggle('active');
+            this.setAttribute('aria-expanded', !isExpanded);
+
+            // Toggle icons
+            if (isExpanded) {
+                menuIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            } else {
+                menuIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            }
+        });
+
+        // Close menu when clicking on a nav item
+        document.querySelectorAll('.dropdown-menu .nav_item').forEach(item => {
+            item.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            });
+        });
+    });
+
+    /* JavaScript to Show/Hide Button */
+    window.addEventListener('scroll', function() {
+        const backToTopBtn = document.querySelector('.back-to-top');
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+
+    // Smooth scroll to top
+    document.querySelector('.back-to-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const mapIframe = document.getElementById('mapIframe');
+        const body = document.body;
+
+        // Check for saved user preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+        }
+
+        // Toggle dark mode
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+
+            // Save preference
+            localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+
+            // Update map dynamically (optional)
+            if (isDarkMode) {
+                mapIframe.style.filter = 'invert(90%) hue-rotate(180deg)';
+            } else {
+                mapIframe.style.filter = 'none';
+            }
+        });
+
+        // Responsive height adjustment
+        function adjustMapHeight() {
+            const mapIframe = document.getElementById('mapIframe'); // Get the element
+            if (mapIframe) { // Check if it exists
+                mapIframe.style.height = `${window.innerHeight * 0.6}px`;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            adjustMapHeight(); // Initial adjustment
+            window.addEventListener('resize', adjustMapHeight);
+        });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalBtnHTML = submitBtn.innerHTML;
+
+        // Show loading state
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending</span><span class="spinner"></span>';
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(this)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('Your message has been sent successfully!', 'success');
+                    this.reset(); // Reset form
+                } else {
+                    showAlert('Error: ' + data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showAlert('Network error. Please try again.', 'error');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHTML;
+            });
+    });
+
+    function showAlert(message, type) {
+        // Remove existing alerts first
+        const existingAlert = document.querySelector('.custom-alert');
+        if (existingAlert) existingAlert.remove();
+
+        const alertBox = document.createElement('div');
+        alertBox.className = `custom-alert ${type}`;
+        alertBox.innerHTML = `
+                <span>${message}</span>
+                <button onclick="this.parentElement.remove()">×</button>
+            `;
+
+        document.body.appendChild(alertBox);
+
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+            alertBox.style.opacity = '0';
+            setTimeout(() => alertBox.remove(), 300);
+        }, 5000);
+    }
+
+</script>
 </body>
 </html>
